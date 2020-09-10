@@ -1,19 +1,25 @@
-# TUGAS UTS
+##### a small email WAP
 
-#### frontend email applicaiton prototype
-- create account
-- Login Page
+# TUGAS UTS - frontend
+
+## Isi Page
+- Landing Page (Home page / Tampilan pertama)
+- About Us
+- User Page
+    - Login Page
+    - Registration
+    - profile page 
 - Dashboard
-    - submenu
+
+##### isi Dashboard:
+- submenu
         - inbox
         - unread
         - sent
-    - email received list
-- mail view
-    - read mode
-    - create mode
-- profile page 
+ - List Email yang diterima
+ - mail view
+     - read mode (baca email yang diterima)
+     - create mode (bikin email buat dikitim)
 
-#TUGAS UAS
 
-#### backend email application
+# TUGAS UAS - backend
