@@ -1,25 +1,35 @@
 ##### a small email WAP
 
-# TUGAS UTS - frontend
+# TUGAS UTS - Front end
 
-## Isi Page
-- Landing Page (Home page / Tampilan pertama)
-- About Us
-- User Page
-    - Login Page
-    - Registration
-    - profile page 
-- Dashboard
+### Page List
+> - Landing Page
+> - About Us
+> - Login Page
+> - Registration 
+> - Dashboard
+> - Settings
 
 ##### isi Dashboard:
-- submenu
-        - inbox
-        - unread
-        - sent
- - List Email yang diterima
- - mail view
-     - read mode (baca email yang diterima)
-     - create mode (bikin email buat dikitim)
+> - Create new email
+> - submenu
+>    - inbox
+>    - unread
+>    - sent
+>    - favourite
+>    - spam
+> - List Email yang diterima
+> - mail view
+>     - read mode (baca email yang diterima)
+>     - create mode (bikin email buat dikitim)
 
+##### isi landing page dan about us
+> - Pake Navbar
+>    - Logo
+>    - Home 
+>    - About us
+>    - Login
 
-# TUGAS UAS - backend
+##### isi login dan register
+> Model login myanimelist
+# TUGAS UAS - Back end
