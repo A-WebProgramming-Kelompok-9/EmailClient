@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="535180001login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SpeedMail</title>
 </head>
 <body>
-    <div>
+    <div class="main">
         <p>Login With</p>
         <ul>
-            <li><button type="button">Facebook</button></li>
-            <li><button type="button">Twitter</button></li>
-            <li><button type="button">Google</button></li>
+            <li><button type="button" class="fa fa-facebook"></button></li>
+            <li><button type="button" class="fa fa-twitter"></button></li>
+            <li><button type="button" class="fa fa-google"></button></li>
         </ul>
+        <p>----------------------  Or  ------------------------</p>
+
+        <div class="input">
+            <p>Username</p>
+            <input type="text" style="width: 100%;">
+            <P>Password</P>
+            <label style="float: right; padding: 0px;">
+                <input type="checkbox">
+                Show password
+            </label>
+            <input type="password" style="width: 100%;">
+            <div>    
+                <label style="margin-top: auto;">
+                    <input type="checkbox">
+                    Always Stay Logged in?
+                </label>
+            </div>
+        </div>
+        <div class="loginbutton">
+            <button type="button" class="fa fa-signin">
+                Login
+            </button>
+        </div>
+        <label>
+            <button type="submit">
+                Forgot Username?
+            </button>
+            <button type="submit">
+                Forgot Password?
+            </button>
+        </label>
+        <div class="loginbutton">
+            <button type="button">
+                Sign Up
+            </button>
+        </div>
     </div>
 </body>
 </html>
