@@ -1,7 +1,7 @@
-div
+.main
 {
     width: 400px;
-    height: 500px;
+    height: 550px;
     background-color:white;
     margin: auto;
     padding: 10px;
@@ -10,12 +10,26 @@ div
     text-align: center;
 }
 
+.input
+{
+    text-align: left;
+}
+
+
 ul
 {
     text-align: center;
 }
+
 li
 {
     padding: 10px;
     display: inline-block;
 }
+
+.loginbutton
+{
+    margin: auto;
+    padding: 50px;
+}
+
