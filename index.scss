@@ -15,17 +15,36 @@ $gray-100: #e6e6fa;
 
 #index {
   background-color: $gray-100;
-
-  #maincontent {
+  #bodycontainer {
+    margin: 0 auto;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    width: 60%;
     align-items: center;
-    p {
-      text-align: center;
+    #maincontent {
+      margin-top: 10vh;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+      img {
+        width: 300px;
+      }
     }
-    img {
-      width: 300px;
+    #features {
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .carousel {
+        .carousel-item {
+          height: 300px;
+          background-color: bisque;
+        }
+      }
     }
   }
 }
