@@ -20,9 +20,10 @@
 
     <title>SPEEDWAGON MAIL</title>
   </head>
-  <body>
+  <body id="wrapper" class="d-flex">
     <div id="nav-placeholder"></div>
     <div id="sidebar-placeholder"></div>
+    <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -39,8 +40,12 @@
     ></script>
 
     <script>
-      $("#nav-placeholder").load("nav.html");
+      //$("#nav-placeholder").load("nav.html");
       $("#sidebar-placeholder").load("side.html");
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
     </script>
   </body>
 </html>
