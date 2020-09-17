@@ -21,3 +21,12 @@
     >
   </div>
 </div>
+<button class="btn btn-primary" id="sidebar-toggle">Toggle Menu</button>
+
+
+<script>
+  $("#sidebar-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+</script>
