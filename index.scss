@@ -3,11 +3,66 @@ $gray-100: #e6e6fa;
 .bg-gray-100 {
   background-color: $gray-100;
 }
+.flex {
+  display: flex;
+}
+.between {
+  justify-content: space-between;
+}
+.b-r {
+  border-radius: 20px;
+}
+.round {
+  border-radius: 100%;
+}
+
+#index {
+  background-color: $gray-100;
+  #bodycontainer {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #maincontent {
+      margin-top: 10vh;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+      img {
+        width: 300px;
+      }
+    }
+    #features {
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .carousel {
+        .carousel-item {
+          height: 300px;
+          background-color: bisque;
+          .content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
+          img {
+            height: 250px;
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}
 
 /*!
- * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ -------------------------------------------
  */
 
 #wrapper {

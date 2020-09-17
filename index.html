@@ -20,13 +20,97 @@
 
     <title>SPEEDWAGON MAIL</title>
   </head>
-  <body id="wrapper" class="d-flex">
-    <div id="nav-placeholder"></div>
-    <div id="sidebar-placeholder"></div>
-    <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <body id="index">
+    <div id="navbar"></div>
+    <div id="bodycontainer">
+      <div id="maincontent" class="mx-auto">
+        <h1>What Is Smail?</h1>
+        <img src="Assets/Speedwagon.jpg" class="b-r" />
+        <a href="#" class="btn btn-dark my-3">
+          <i data-feather="alert-circle" class="mr-1"></i>
+          About Us
+        </a>
+        <p class="my-5">
+          s’Mail is some sort email client application that enable configuring
+          one or more email addresses to receive, read, compose and send emails
+          from one user to another.
+        </p>
+      </div>
+      <div id="features">
+        <h1>Features</h1>
+        <h3>Here are the reasons why you should use Smail</h3>
+        <div id="FeatureCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              data-target="#FeatureCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#FeatureCarousel" data-slide-to="1"></li>
+            <li data-target="#FeatureCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="content">
+                <img src="Assets/Speedwagon.jpg" class="b-r mx-auto my-auto" />
+                <div>
+                  <h4>No need to own a computer</h4>
+                  <p>
+                    s'Mail can be access via browser from your smartphone, you
+                    just need to have an account then login by using it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content">
+                <img src="Assets/Speedwagon.jpg" class="b-r mx-auto my-auto" />
+                <div>
+                  <h4>No need to own a computer</h4>
+                  <p>
+                    s'Mail can be access via browser from your smartphone, you
+                    just need to have an account then login by using it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content">
+                <img
+                  src="https://i.kym-cdn.com/entries/icons/facebook/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg"
+                  class="b-r mx-auto my-auto"
+                />
+                <div>
+                  <h4>Stonks</h4>
+                  <p>
+                    s'Mail can be access via browser from your smartphone, you
+                    just need to have an account then login by using it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#FeatureCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#FeatureCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -38,14 +122,12 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <script>
-      //$("#nav-placeholder").load("nav.html");
-      $("#sidebar-placeholder").load("side.html");
-      $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-      });
+      feather.replace();
+      $("#navbar").load("nav.html");
+      $("#sidebar").load("side.html");
     </script>
   </body>
 </html>

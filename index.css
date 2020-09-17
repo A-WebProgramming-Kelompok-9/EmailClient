@@ -2,10 +2,104 @@
   background-color: #e6e6fa;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-r {
+  border-radius: 20px;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+#index {
+  background-color: #e6e6fa;
+}
+
+#index #bodycontainer {
+  margin: 0 auto;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #bodycontainer #maincontent {
+  margin-top: 10vh;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #bodycontainer #maincontent p {
+  text-align: center;
+}
+
+#index #bodycontainer #maincontent img {
+  width: 300px;
+}
+
+#index #bodycontainer #features {
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #bodycontainer #features .carousel .carousel-item {
+  height: 300px;
+  background-color: bisque;
+}
+
+#index #bodycontainer #features .carousel .carousel-item .content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #bodycontainer #features .carousel .carousel-item img {
+  height: 250px;
+  width: 350px;
+}
+
 /*!
- * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ -------------------------------------------
  */
 #wrapper {
   overflow-x: hidden;
