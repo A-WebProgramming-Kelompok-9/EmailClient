@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .lingkaran {
+            position: relative;
+            bottom: 40px;
+            left: 105px;
+			width: 100px;
+			height: 100px;
+			background: grey;
+			border-radius: 100%;
+            display: inline-block;
+		}
+        .useremail {
+            position: relative;
+            bottom: 440px;
+            left: 230px;
+        }
+        .changeusername {
+            position: relative;
+            bottom: 450px;
+            left: 230px;
+            color: blue;
+        }
+        .changerback {
+            position: relative;
+            bottom: 460px;
+            left: 230px;
+            color: blue;
+        }
+        .form-control {
+            position: relative;
+            left: 180px;
+            bottom: 43px;
+        }
+        .btn-primary {
+            position: relative;
+            left: 560px;
+            bottom: 39px;
+            margin-bottom: 20px;
+        }
+ 
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="row mb-4">
+       <div class="co2-sm mx-3 px-5 py-3 border rounded" style="width: 800px">
+           <div class="row">
+               <div class="col-sm">
+                <h5 class="my-2 text-dark">Settings</h5>
+                <hr>
+                <button type="button" class="btn btn-outline-secondary">
+                    My Settings
+                  </button>
+                  <hr>
+                  <p>My Account : </p> 
+                  <span class="lingkaran"></span>
+                  <hr>
+                  <p>Change your password : </p>
+                  <input type="text" class="form-control" placeholder="Old Password" aria-label="Old Password" aria-describedby="basic-addon1" style="width: 500px;">
+                  <button type="button" class="btn btn-primary" style="width: 120px;">Check</button>
+                  <input type="text" class="form-control" placeholder="New Password" aria-label="New Password" aria-describedby="basic-addon1" style="width: 500px;">
+                  <button type="button" class="btn btn-primary" style="width: 120px;">Submit</button>
+                  <hr>
+                  <p class="useremail"> xxxxxxxxx@speedwagon.com</p>
+                  <p class="changeusername"> change your username</p>
+                  <p class="changerback"> change your background</p>
+               </div>
+           </div>
+       </div>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>
