@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View Form</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.stack.imgur.com/NTTTK.jpg">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- catalog js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- ini Navbar copas dari Dashboard-->
+    <!-- Second side note, oh god ini columnnya napa gini :' tapi males benerin, jaid aku ngikut dulu wkwk-->
+    <div class="container; align-left margin-left" style="width: 1366; height: 768">
+        <div class="row">
+            <div class="col-xs-2 bg-info navbar-light" style="position: absolute; bottom: 0; top: 0; padding: 20px">
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <p style="font-size: 15px">
+                            <a href="#">
+                                <img src="https://i.stack.imgur.com/NTTTK.jpg" alt="logo" class="rounded-circle"
+                                    style="width: 30px; height: 30px">
+                            </a>
+                            <b>Speedwagon Mail</b>
+                        </p>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inbox</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Unread</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Send</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Favorite</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Spam</a>
+                        </li>
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                    </ul>
+                    <li class="nav-item active" style="list-style: none; padding: 5px">
+                        <a href="#" style="font-size:8px">Email@speedwagon.com</a>
+                        <img src="https://i.stack.imgur.com/NTTTK.jpg" alt="logo" class="rounded-circle"
+                            style="width: 30px; height: 30px; margin-left: 30px">
+                    </li>
+                    <li class="row" style="padding: 20px">
+                        <a class="nav-link" href="#" style="font-size:10px">Logout </a>
+                        <a class="nav-link" href="#" style="font-size:10px; margin-left: 5px">Profile </a>
+                    </li>
+                </nav>
+            </div>
+
+
+            <div class="col-xs-10 bg-light navbar-light"
+                style="position: absolute; bottom: 0; top: 0; margin-left: 220px; padding: 20px">
+                <!-- Original content from here-->
+                <h2 class="mt-2">Title Email</h2>
+                <div class="row">
+                    <div class="col-sm">
+                        <!--Back Button-->
+                        <a class="btn btn-light btn-lg" href="#" style="height: 100%;"><i data-feather="arrow-left"
+                                style="width:auto ; height: 100%;"></i></a>
+                        <!-- Profile-picture-->
+                        <img id="profilepic"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.change.org%2Fphotos%2F3%2Fvi%2Fnt%2FIPvinTvkGIZxmOt-1600x900-noPad.jpg%3F1539485029&f=1&nofb=1"
+                            alt="logo" class="rounded-circle" width="80" height="75%" ;>
+                        <!--Sender and Recipient-->
+                        <label class="text-left align-middle mx-3">
+                            <h4>From : The Pillar Man &lt;<a href="#">ayaya@swagon.com</a>&gt;</h4>
+                            <h4>To : Sans the Skeleton &lt;<a href="#">meh@swagon.com</a>&gt;</h4>
+                        </label>
+                        <!--Block Button-->
+                        <a class="btn btn-outline-danger btn-lg align-top" href="#"><i data-feather="slash"></i>
+                            Block</a>
+                    </div>
+                    <!--3 Button dipaling kanan, Delete, Forward, dan Reply-->
+                    <label class="text-right align-middle">
+                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="trash-2"></i> Delete</a>
+                        <br>
+                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="fast-forward"></i>
+                            Forward</a> <br>
+                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="rewind"></i> Reply</a>
+                    </label>
+                </div>
+                <!--Text tapi readonly-->
+                <div class="row mx-auto">
+                    <textarea class="text" style="width: 100%; height: 100%;" rows="28" readonly>
+Dear Helpdesk,
+Thank you for creating my account so fast.
+Though it is very funny, but how could i sell our products with an email address as bitch@accorhotel.com?
+Please change it ASAP.
+
+Thank you in advance.
+Bill Tchavlovsky
+_________________________________________________________
+
+Dear Mr Tchavlovsky
+Unfortunately account names are generated from your initials, we cannot change it.
+You can believe me.
+
+Regards,
+Ajani Erkson ajerk@accorhotel.com
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>feather.replace()</script>
+
+</body>
+
+</html>
