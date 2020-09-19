@@ -93,7 +93,7 @@
           align-items: center;
 }
 
-#index #bodycontainer #features .carousel .carousel-item img {
+#index #bodycontainer #features .carousel .carousel-item .content img {
   height: 250px;
   width: 350px;
 }
