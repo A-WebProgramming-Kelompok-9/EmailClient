@@ -1,7 +1,11 @@
 <link rel="stylesheet" href="/Assets/Styles/side.css" />
-<div class="bg-light border-right" id="sidebar-wrapper">
-  <a class="navbar-brand" href="#">Speedwagon Mail</a>
-  <div class="list-group list-group-flush">
+<link rel="stylesheet" href="/Components/Styles/side.css" />
+<div class="bg-light flex-col" id="sidebar-wrapper">
+  <a class="navbar-brand my-2" href="#">
+    <div id="sidebar-image-brand"></div>
+    Speedwagon Mail</a
+  >
+  <div class="list-group list-group-flush mt-2">
     <a href="#" class="list-group-item list-group-item-action bg-light"
       >Inbox</a
     >
@@ -12,7 +16,22 @@
     <a href="#" class="list-group-item list-group-item-action bg-light"
       >Favourite</a
     >
-    <a href="#" class="list-group-item list-group-item-action bg-light">Dpsm</a>
+    <a href="#" class="list-group-item list-group-item-action bg-light">Spam</a>
+  </div>
+  <div class="profile flex mt-auto mb-2">
+    <div class="flex-col">
+      <p>Email@speedwagon.com</p>
+      <div class="flex">
+        <p>Logout</p>
+        <p>Profile</p>
+      </div>
+    </div>
+    <img
+      src="https://i.stack.imgur.com/NTTTK.jpg"
+      alt="logo"
+      class="rounded-circle mx-auto my-auto"
+      style="width: 50px; height: 50px"
+    />
   </div>
 </div>
 
@@ -20,5 +39,10 @@
   $("#sidebar-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
+  });
+  $(document).ready(function (e) {
+    $("#sidebar-image-brand").replaceWith(
+      `<img src="https://i.stack.imgur.com/NTTTK.jpg" alt="" class="rounded-circle mr-3"/>`
+    );
   });
 </script>
