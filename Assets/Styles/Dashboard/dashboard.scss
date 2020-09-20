@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.tab{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 200px;
+    height: 786px;
+
+    .tab-img-title{
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+        padding: 20px;
+    }
+    .tab-content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .tab-account{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        justify-content: space-between;
+        width: 160px;
+        padding: 20px;
+    }
+    .log-pro{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        justify-content: space-between;
+        width: 160px;
+        padding: 20px;
+    }
+}
+
+.inbox{
+    display: flex;
+    flex-direction: column;
+    background-color: darkcyan;
+    width: 1150px;
+    height: 786px;
+
+    .search{
+        display: flex;
+        flex-direction: row;    
+        padding: 20px;
+    }
+    .mail{
+        display: flex;
+        flex-direction: column;
+        
+        .mail-items{
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+    }
+
+}
