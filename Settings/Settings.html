@@ -1,123 +1,172 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-        .lingkaran {
-            position: relative;
-            bottom: 40px;
-            left: 105px;
-			width: 100px;
-			height: 100px;
-			background: grey;
-			border-radius: 100%;
-            display: inline-block;
-		}
-        .useremail {
-            position: relative;
-            bottom: 440px;
-            left: 230px;
-        }
-        .form-control {
-            position: relative;
-            left: 180px;
-            bottom: 43px;
-        }
-        .btn-primary {
-            position: relative;
-            left: 560px;
-            bottom: 39px;
-            margin-bottom: 20px;
-        }
- 
-        </style>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <head>
+    <style>
+      .lingkaran {
+        position: relative;
+        bottom: 40px;
+        left: 105px;
+        width: 100px;
+        height: 100px;
+        background: grey;
+        border-radius: 100%;
+        display: inline-block;
+      }
+      .useremail {
+        position: relative;
+        bottom: 440px;
+        left: 230px;
+      }
+      .form-control {
+        position: relative;
+        left: 180px;
+        bottom: 43px;
+      }
+      .btn-primary {
+        position: relative;
+        left: 560px;
+        bottom: 39px;
+        margin-bottom: 20px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container; align-left margin-left" style="width: 1366; height: 768">
-                <div class="col-xs-2 bg-info navbar-light" style="position: absolute; bottom: 0; top: 0; padding: 20px; width: 250px;">
-                    <nav class="navbar">
-                        <ul class="navbar-nav">
-                            <p style="font-size: 15px">
-                                <a href="#">
-                                    <img src="https://i.stack.imgur.com/NTTTK.jpg" alt="logo" class="rounded-circle" style="width: 30px; height: 30px">
-                                </a>
-                                <b>Speedwagon Mail</b>
-                            </p>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Inbox</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Unread</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Send</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Favorite</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Spam</a>
-                            </li>
-                            <br><br><br><br><br><br><br><br><br><br><br>
-                        </ul>
-                        <div style="position: relative; bottom: -400px;">
-                        <li class="nav-item active" style="list-style: none; padding: 5px">
-                            <a href="#" style="font-size:8px">Email@speedwagon.com</a>
-                            <img src="https://i.stack.imgur.com/NTTTK.jpg" alt="logo" class="rounded-circle"
-                                style="width: 30px; height: 30px; margin-left: 30px">
-                        </li>
-                        <li class="row" style="padding: 20px">
-                            <a class="nav-link" href="#" style="font-size:10px">Logout </a>
-                            <a class="nav-link" href="#" style="font-size:10px; margin-left: 5px">Profile </a>
-                        </li>
-                    </div>
-                    </nav>
-                </div>
-                <div class="col-xs-10 bg-light navbar-light" style="position: absolute; bottom: 0; top: 0; margin-left: 220px; padding: 20px">            
-                    <ul class="navbar-nav" style="margin-left: 10px">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search mail" aria-label="Search" style="width: 850px; bottom: 5px; left: 10px;">
-                                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit" style="position: relative; left: 10px; bottom: 5.4px;"><i data-feather="search"></i></button>
-                                <a style="padding: 20px"></a>
-                        </form>
-                    </ul>
-                </div>
-
-        <div class="row mb-4" style="position: relative; left: 260px;
-        bottom: -70px;">
-       <div class="co2-sm mx-3 px-5 py-3 border rounded" style="width: 800px">
-           <div class="row">
-               <div class="col-sm">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <div id="sidebar"></div>
+      <div id="page-content-wrapper">
+        <div
+          class="col-xs-10 bg-light navbar-light"
+          style="
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            margin-left: 220px;
+            padding: 20px;
+          "
+        >
+          <div class="navbar-nav" style="margin-left: 10px">
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search mail"
+                aria-label="Search"
+                style="width: 850px; bottom: 5px; left: 10px"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+                style="position: relative; left: 10px; bottom: 5.4px"
+              >
+                <i data-feather="search"></i>
+              </button>
+              <div style="padding: 20px"></div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="row mb-4"
+          style="position: relative; left: 260px; bottom: -70px"
+        >
+          <div
+            class="co2-sm mx-3 px-5 py-3 border rounded"
+            style="width: 800px"
+          >
+            <div class="row">
+              <div class="col-sm">
                 <h5 class="my-2 text-dark">Settings</h5>
-                <hr>
+                <hr />
                 <button type="button" class="btn btn-outline-secondary">
-                    My Settings
-                  </button>
-                  <hr>
-                  <p>My Account : </p> 
-                  <span class="lingkaran"></span>
-                  <hr>
-                  <p>Change your password : </p>
-                  <input type="text" class="form-control" placeholder="Old Password" aria-label="Old Password" aria-describedby="basic-addon1" style="width: 500px;">
-                  <button type="button" class="btn btn-primary" style="width: 120px;">Check</button>
-                  <input type="text" class="form-control" placeholder="New Password" aria-label="New Password" aria-describedby="basic-addon1" style="width: 500px;">
-                  <button type="button" class="btn btn-primary" style="width: 120px;">Submit</button>
-                  <hr>
-                  <p class="useremail"> xxxxxxxxx@speedwagon.com</p>
-                  <button type="button" class="btn btn-link" style="position: relative; bottom: 460px; left: 217px;">Change your Username</button>
-                  <button type="button" class="btn btn-link" style="position: relative; bottom: 430px; left: 23px;">Change your Picture</button>
-                  <button type="button" class="btn btn-link" style="position: relative; bottom: 400px; left: -150px;">Change your Background</button>
-               </div>
-           </div>
-       </div>
+                  My Settings
+                </button>
+                <hr />
+                <p>My Account :</p>
+                <span class="lingkaran"></span>
+                <hr />
+                <p>Change your password :</p>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Old Password"
+                  aria-label="Old Password"
+                  aria-describedby="basic-addon1"
+                  style="width: 500px"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  style="width: 120px"
+                >
+                  Check
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="New Password"
+                  aria-label="New Password"
+                  aria-describedby="basic-addon1"
+                  style="width: 500px"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  style="width: 120px"
+                >
+                  Submit
+                </button>
+                <hr />
+                <p class="useremail">xxxxxxxxx@speedwagon.com</p>
+                <button
+                  type="button"
+                  class="btn btn-link"
+                  style="position: relative; bottom: 460px; left: 217px"
+                >
+                  Change your Username
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-link"
+                  style="position: relative; bottom: 430px; left: 23px"
+                >
+                  Change your Picture
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-link"
+                  style="position: relative; bottom: 400px; left: -150px"
+                >
+                  Change your Background
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script src="https://unpkg.com/feather-icons"></script>
-        <script>
-            feather.replace();
-        </script>
-    </body>
+    <script>
+      feather.replace();
+      $("#navbar").load("/Components/nav.html");
+      $("#sidebar").load("/Components/side.html");
+    </script>
+  </body>
 </html>
