@@ -81,9 +81,16 @@
           align-items: center;
 }
 
+#index #bodycontainer #features h4 {
+  font-weight: normal;
+}
+
+#index #bodycontainer #features .carousel {
+  width: 70vw;
+}
+
 #index #bodycontainer #features .carousel .carousel-item {
   height: 300px;
-  background-color: bisque;
 }
 
 #index #bodycontainer #features .carousel .carousel-item .content {
@@ -94,6 +101,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+#index #bodycontainer #features .carousel .carousel-item .content .text-area {
+  width: 470px;
 }
 
 #index #bodycontainer #features .carousel .carousel-item .content img {
