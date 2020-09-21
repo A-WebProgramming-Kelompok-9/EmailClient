@@ -1,6 +1,6 @@
 ![](Assets/Speedwagon.jpg)
 
-> “ Speedwagon withdraws coolly. ”
+> <center>“ Speedwagon withdraws coolly. ”</center>
 >
 > —Robert E. O. Speedwagon
 
@@ -19,13 +19,14 @@
 
 ### Page List
 
-> - Landing Page
-> - About Us
-> - Login Page
-> - Registration
+> - [Landing Page](https://a-webprogramming-kelompok-9.github.io/EmailClient/)
+> - [About Us]()
+> - [Login Page](https://a-webprogramming-kelompok-9.github.io/EmailClient/login/Login.html)
+> - [Registration](https://a-webprogramming-kelompok-9.github.io/EmailClient/register/Register.html)
 > - Forgot Password
-> - Dashboard
-> - Settings
+> - [Dashboard](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/dashboard.html)
+>   - [Mail View](https://a-webprogramming-kelompok-9.github.io/EmailClient/View_Create/View_Email.html)
+> - [Settings](https://a-webprogramming-kelompok-9.github.io/EmailClient/Settings/Settings.html)
 
 ##### isi Dashboard:
 
