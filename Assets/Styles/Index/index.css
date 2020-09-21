@@ -1,3 +1,4 @@
+/* SCSS Gradient */
 .bg-gray-100 {
   background-color: #e6e6fa;
 }
@@ -23,7 +24,11 @@
 }
 
 #index {
-  background-color: #e6e6fa;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, #a77d52)), url(/Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 65%), url(/Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background-position: 0px -130px;
+  background-size: 100vw;
+  height: 100%;
 }
 
 #index #bodycontainer {
@@ -42,8 +47,7 @@
 }
 
 #index #bodycontainer #maincontent {
-  margin-top: 10vh;
-  height: 70vh;
+  margin-top: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +69,6 @@
 }
 
 #index #bodycontainer #features {
-  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
