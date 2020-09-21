@@ -24,8 +24,8 @@
 }
 
 #index {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, #a77d52)), url(/Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 65%), url(/Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, #a77d52)), url(Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 65%), url(Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
   background-position: 0px -130px;
   background-size: 100vw;
   height: 100%;
