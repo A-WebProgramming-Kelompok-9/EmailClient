@@ -25,21 +25,24 @@
     <div id="bodycontainer">
       <div id="maincontent" class="mx-auto">
         <h1>What Is Smail?</h1>
-        <img src="Assets/Speedwagon.jpg" class="b-r" />
         <a href="#" class="btn btn-dark my-3">
           <i data-feather="alert-circle" class="mr-1"></i>
           About Us
         </a>
-        <p class="my-5">
+        <p class="mb-5">
           s’Mail is some sort email client application that enable configuring
           one or more email addresses to receive, read, compose and send emails
           from one user to another.
         </p>
       </div>
-      <div id="features">
+      <div id="features" class="mt-5">
         <h1>Features</h1>
-        <h3>Here are the reasons why you should use Smail</h3>
-        <div id="FeatureCarousel" class="carousel slide" data-ride="carousel">
+        <h4 class="mt-2">Here are the reasons why you should use Smail</h4>
+        <div
+          id="FeatureCarousel"
+          class="carousel slide mt-2"
+          data-ride="carousel"
+        >
           <ol class="carousel-indicators">
             <li
               data-target="#FeatureCarousel"
@@ -48,12 +51,13 @@
             ></li>
             <li data-target="#FeatureCarousel" data-slide-to="1"></li>
             <li data-target="#FeatureCarousel" data-slide-to="2"></li>
+            <li data-target="#FeatureCarousel" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="content mx-2">
-                <img src="Assets/Speedwagon.jpg" class="b-r mx-auto my-auto" />
-                <div class="mx-5">
+              <div class="content mx-5">
+                <img src="Assets/Rainbow_Yeah.jpg" class="b-r my-auto ml-5" />
+                <div class="ml-5 text-area pr-5">
                   <h4>No need to own a computer</h4>
                   <p>
                     s'Mail can be access via browser from your smartphone, you
@@ -63,29 +67,38 @@
               </div>
             </div>
             <div class="carousel-item">
-              <div class="content mx-2">
-                <img src="Assets/Speedwagon.jpg" class="b-r mx-auto my-auto" />
-                <div class="mx-5">
-                  <h4>No need to own a computer</h4>
+              <div class="content mx-5">
+                <img src="Assets/Speedwagon_2.jpg" class="b-r my-auto ml-5" />
+                <div class="ml-5 text-area pr-5">
+                  <h4>Easy access</h4>
                   <p>
-                    s'Mail can be access via browser from your smartphone, you
-                    just need to have an account then login by using it.
+                    Access your email directly as long as you have internet
+                    access, just login and youre good to go
                   </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="content mx-2">
+              <div class="content mx-5">
+                <img src="/Assets/Speedwagon.jpg" class="b-r my-auto ml-5" />
+                <div class="ml-5 text-area pr-5">
+                  <h4>Backup and Security</h4>
+                  <p>
+                    All your information and mails are kept safe and protected
+                    from any malicious attempt while being ready 24/7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content mx-5">
                 <img
                   src="https://i.kym-cdn.com/entries/icons/facebook/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg"
-                  class="b-r mx-auto my-auto"
+                  class="b-r my-auto ml-5"
                 />
-                <div class="mx-5">
-                  <h4>No need to own a computer</h4>
-                  <p>
-                    s'Mail can be access via browser from your smartphone, you
-                    just need to have an account then login by using it.
-                  </p>
+                <div class="ml-5 text-area pr-5 mr-auto">
+                  <h4>Stonks</h4>
+                  <p>Stonks</p>
                 </div>
               </div>
             </div>
@@ -112,22 +125,23 @@
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <script>
-      feather.replace();
-      $("#navbar").load("/Components/nav.html");
-      $("#sidebar").load("/Components/side.html");
-    </script>
+    <div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script>
+        feather.replace();
+        $("#navbar").load("/Components/nav.html");
+        $("#sidebar").load("/Components/side.html");
+      </script>
+    </div>
   </body>
 </html>

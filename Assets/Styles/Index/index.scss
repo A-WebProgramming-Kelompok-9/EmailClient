@@ -1,4 +1,80 @@
 $gray-100: #e6e6fa;
+$brown-200: rgba(167, 125, 82, 1);
+$brown-100: rgba(254, 243, 195, 1);
+$brown-300: rgba(67, 51, 28, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(
+  0deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-right: linear-gradient(
+  90deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-bottom: linear-gradient(
+  180deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-left: linear-gradient(
+  270deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-top-right: linear-gradient(
+  45deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-bottom-right: linear-gradient(
+  135deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-top-left: linear-gradient(
+  225deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-bottom-left: linear-gradient(
+  315deg,
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
+$gradient-radial: radial-gradient(
+  #a77d52ff,
+  #fef3c3ff,
+  #43331cff,
+  #fef3c3ff,
+  #a77d52ff
+);
 
 .bg-gray-100 {
   background-color: $gray-100;
@@ -17,7 +93,11 @@ $gray-100: #e6e6fa;
 }
 
 #index {
-  background-color: $gray-100;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $brown-200 65%),
+    url(/Assets/Speedwagon_sepia.jpg) no-repeat $brown-200;
+  background-position: 0px -130px;
+  background-size: 100vw;
+  height: 100%;
   #bodycontainer {
     margin: 0 auto;
     width: 60%;
@@ -25,8 +105,7 @@ $gray-100: #e6e6fa;
     flex-direction: column;
     align-items: center;
     #maincontent {
-      margin-top: 10vh;
-      height: 70vh;
+      margin-top: 500px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -38,24 +117,29 @@ $gray-100: #e6e6fa;
       }
     }
     #features {
-      height: 75vh;
       display: flex;
       flex-direction: column;
       align-items: center;
+      h4 {
+        font-weight: normal;
+      }
       .carousel {
+        width: 70vw;
         .carousel-item {
           height: 300px;
-          background-color: bisque;
           .content {
             height: 100%;
             display: flex;
             align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            .text-area {
+              width: 470px;
+            }
             img {
               height: 250px;
               width: 350px;
             }
-            
-            
           }
         }
       }
@@ -66,48 +150,3 @@ $gray-100: #e6e6fa;
 /*!
  -------------------------------------------
  */
-
-#wrapper {
-  overflow-x: hidden;
-}
-
-#sidebar-wrapper {
-  min-height: 100vh;
-  margin-left: -15rem;
-  -webkit-transition: margin 0.25s ease-out;
-  -moz-transition: margin 0.25s ease-out;
-  -o-transition: margin 0.25s ease-out;
-  transition: margin 0.25s ease-out;
-}
-
-#sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
-}
-
-#sidebar-wrapper .list-group {
-  width: 15rem;
-}
-
-#page-content-wrapper {
-  min-width: 100vw;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-  margin-left: 0;
-}
-
-@media (min-width: 768px) {
-  #sidebar-wrapper {
-    margin-left: 0;
-  }
-
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
-  }
-}
