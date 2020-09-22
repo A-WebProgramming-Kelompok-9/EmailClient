@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Assets/Styles/Register.css" />
+    <link rel="stylesheet" href="/Assets/Styles/Register.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -18,12 +18,11 @@
       </p>
       <p>Sign up with</p>
       <ul>
-        <li><button type="button" class="fa fa-facebook"></button></li>
-        <li><button type="button" class="fa fa-twitter"></button></li>
-        <li><button type="button" class="fa fa-google"></button></li>
+        <li><button type="button" class="fa fa-facebook" aria-hidden="true">Facebook</button></li>
+        <li><button type="button" class="fa fa-twitter" aria-hidden="true">Twitter</button></li>
+        <li><button type="button" class="fa fa-google" aria-hidden="true">Google</button></li>
       </ul>
-      <p>---------------------- Or ------------------------</p>
-
+      <p>---------------------------------- Or ------------------------------------</p>
       <div class="input">
         <p>Email</p>
         <input type="text" style="width: 100%" />
@@ -34,10 +33,9 @@
         <p>Confirm Password</p>
         <input type="password" style="width: 100%" />
       </div>
-      <label>
-        <input type="checkbox" />
-        I have read and agree to the terms of service and privacy policy
-      </label>
+      
+      <input type="checkbox" />
+      I have read and agree to the terms of service and privacy policy
       <div class="createbutton">
         <button type="button" class="fa fa-plus-square" aria-hidden="true">
           Create Account
