@@ -1,0 +1,207 @@
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  left: 260px;
+  bottom: -70px;
+}
+
+.container .pengaturan {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 800px;
+  height: 730px;
+  border: 0.05px solid grey;
+  padding: 20px;
+}
+
+.container .pengaturan .titlesettings {
+  margin-top: 2;
+  margin-bottom: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: black;
+}
+
+.container .pengaturan .list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .pengaturan .list .btn {
+  border-radius: 12px;
+}
+
+.container .pengaturan .dp {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .pengaturan .dp .lingkaran {
+  position: relative;
+  bottom: 40px;
+  left: 105px;
+  width: 100px;
+  height: 100px;
+  background: grey;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.container .pengaturan .pass {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .pengaturan .pass .form-control {
+  position: relative;
+  left: 180px;
+  bottom: 43px;
+  width: 500px;
+}
+
+.container .pengaturan .pass .btn-primary {
+  position: relative;
+  left: 560px;
+  bottom: 39px;
+  margin-bottom: 20px;
+  width: 120px;
+}
+
+.container .pengaturan .pass .oldpass {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .pengaturan .pass .newpass {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .pengaturan .nama {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .pengaturan .nama .form-control {
+  position: relative;
+  left: 180px;
+  bottom: 43px;
+  width: 500px;
+}
+
+.container .pengaturan .nama .btn-primary {
+  position: relative;
+  left: 560px;
+  bottom: 39px;
+  margin-bottom: 20px;
+  width: 120px;
+}
+
+.container .pengaturan .account {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 104px;
+}
+
+.container .pengaturan .account .useremail {
+  position: relative;
+  bottom: 436px;
+  left: 230px;
+}
+
+.container .pengaturan .account .buttonlink {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .pengaturan .account .buttonlink .user {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 455px;
+  left: 230px;
+}
+
+.container .pengaturan .account .buttonlink .pic {
+  position: relative;
+  bottom: 475px;
+  left: -78px;
+}
+
+.container .pengaturan .account .buttonlink .back {
+  position: relative;
+  bottom: 485px;
+  left: -60px;
+}
+/*# sourceMappingURL=Settings.css.map */
