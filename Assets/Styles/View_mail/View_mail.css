@@ -1,0 +1,56 @@
+.boxing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  width: 100%;
+}
+
+.boxing .sidebar {
+  background-color: lightblue;
+  width: 15%;
+  height: 100%;
+}
+
+.boxing .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+}
+
+.boxing .main h2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxing .main .mail-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.boxing .main .mail-header .tri-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.boxing .main .mail-content textarea {
+  width: 100%;
+}
+/*# sourceMappingURL=View_mail.css.map */
