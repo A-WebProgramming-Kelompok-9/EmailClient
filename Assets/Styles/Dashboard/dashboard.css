@@ -83,7 +83,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: darkcyan;
+  background-color: #92ebeb;
   width: 1150px;
   height: 786px;
 }
