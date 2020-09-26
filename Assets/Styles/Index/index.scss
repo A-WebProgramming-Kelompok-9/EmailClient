@@ -125,14 +125,13 @@ $gradient-radial: radial-gradient(
       }
       .carousel {
         width: 70vw;
+        height: 350px;
         .carousel-item {
-          height: 300px;
           .content {
-            height: 100%;
+            margin-top: 20px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            width: 100%;
             .text-area {
               width: 470px;
             }
@@ -145,24 +144,33 @@ $gradient-radial: radial-gradient(
       }
     }
     #reviews {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .carousel {
+        width: 500px;
         .carousel-item {
-          width: 500px;
-          height: 700px;
-          .img {
-            width: 200px;
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-          }
-          .img-cent {
-            background-position: center;
-          }
-          .img-left {
-            background-position: left;
-          }
-          .img-right {
-            background-position: right;
+          height: 400px;
+          .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img {
+              width: 200px;
+              height: 200px;
+              background-size: cover;
+              background-position: center;
+            }
+            .img-cent {
+              background-position: center;
+            }
+            .img-left {
+              background-position: left;
+            }
+            .img-right {
+              background-position: right;
+            }
           }
         }
       }
