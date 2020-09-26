@@ -23,17 +23,51 @@
   border-radius: 100%;
 }
 
+.b-sides {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
 #index {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, #a77d52)), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 65%), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(45%, #a77d52)), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 45%), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
   background-position: 0px -130px;
   background-size: 100vw;
   height: 100%;
 }
 
+#index::-webkit-scrollbar {
+  width: 10px;
+}
+
+#index::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#index::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.288);
+  outline: 1px solid slategrey;
+  border-radius: 50px;
+}
+
 #index #bodycontainer {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #bodycontainer #welcome {
   width: 60%;
+  margin-top: 470px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,29 +80,20 @@
           align-items: center;
 }
 
-#index #bodycontainer #maincontent {
-  margin-top: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#index #bodycontainer #maincontent p {
+#index #bodycontainer #welcome p {
   text-align: center;
 }
 
-#index #bodycontainer #maincontent img {
+#index #bodycontainer #welcome img {
   width: 300px;
 }
 
-#index #bodycontainer #features {
+#index #bodycontainer #maincontent {
+  width: 80%;
+}
+
+#index #bodycontainer #maincontent #features {
+  background-color: rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,16 +106,17 @@
           align-items: center;
 }
 
-#index #bodycontainer #features h4 {
+#index #bodycontainer #maincontent #features h4 {
   font-weight: normal;
 }
 
-#index #bodycontainer #features .carousel {
+#index #bodycontainer #maincontent #features .carousel {
+  border-radius: 10px;
   width: 70vw;
   height: 350px;
 }
 
-#index #bodycontainer #features .carousel .carousel-item .content {
+#index #bodycontainer #maincontent #features .carousel .carousel-item .content {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,16 +129,16 @@
           justify-content: flex-start;
 }
 
-#index #bodycontainer #features .carousel .carousel-item .content .text-area {
+#index #bodycontainer #maincontent #features .carousel .carousel-item .content .text-area {
   width: 470px;
 }
 
-#index #bodycontainer #features .carousel .carousel-item .content img {
+#index #bodycontainer #maincontent #features .carousel .carousel-item .content img {
   height: 250px;
   width: 350px;
 }
 
-#index #bodycontainer #reviews {
+#index #bodycontainer #maincontent #reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,15 +151,15 @@
           align-items: center;
 }
 
-#index #bodycontainer #reviews .carousel {
+#index #bodycontainer #maincontent #reviews .carousel {
   width: 500px;
 }
 
-#index #bodycontainer #reviews .carousel .carousel-item {
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item {
   height: 400px;
 }
 
-#index #bodycontainer #reviews .carousel .carousel-item .content {
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,22 +172,22 @@
           align-items: center;
 }
 
-#index #bodycontainer #reviews .carousel .carousel-item .content .img {
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img {
   width: 200px;
   height: 200px;
   background-size: cover;
   background-position: center;
 }
 
-#index #bodycontainer #reviews .carousel .carousel-item .content .img-cent {
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img-cent {
   background-position: center;
 }
 
-#index #bodycontainer #reviews .carousel .carousel-item .content .img-left {
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img-left {
   background-position: left;
 }
 
-#index #bodycontainer #reviews .carousel .carousel-item .content .img-right {
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img-right {
   background-position: right;
 }
 
