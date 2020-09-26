@@ -24,8 +24,8 @@
 }
 
 #index {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, #a77d52)), url(/Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 65%), url(/Assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(65%, #a77d52)), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 65%), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
   background-position: 0px -130px;
   background-size: 100vw;
   height: 100%;
@@ -114,6 +114,30 @@
 #index #bodycontainer #features .carousel .carousel-item .content img {
   height: 250px;
   width: 350px;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item {
+  width: 500px;
+  height: 700px;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img-cent {
+  background-position: center;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img-left {
+  background-position: left;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img-right {
+  background-position: right;
 }
 
 /*!

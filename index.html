@@ -123,6 +123,114 @@
           </a>
         </div>
       </div>
+      <div id="reviews">
+        <h1>Reviews</h1>
+        <h4 class="mt-2">Some Reviews from our clients</h4>
+        <div
+          id="ReviewCarousel"
+          class="carousel slide mt-2"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#ReviewCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#ReviewCarousel" data-slide-to="1"></li>
+            <li data-target="#ReviewCarousel" data-slide-to="2"></li>
+            <li data-target="#ReviewCarousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="content mx-5">
+                <div
+                  class="img"
+                  style="background-image: url('Assets/Rainbow_Yeah.jpg')"
+                ></div>
+
+                <div class="ml-5 text-area pr-5">
+                  <h4>No need to own a computer</h4>
+                  <p>
+                    s'Mail can be access via browser from your smartphone, you
+                    just need to have an account then login by using it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content mx-5">
+                <div
+                  class="img img-right"
+                  style="background-image: url('Assets/Speedwagon_2.jpg')"
+                ></div>
+                <div class="ml-5 text-area pr-5">
+                  <h4>Easy access</h4>
+                  <p>
+                    Access your email directly as long as you have internet
+                    access, just login and youre good to go
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content mx-5">
+                <div
+                  class="img"
+                  style="background-image: url('Assets/Speedwagon.jpg')"
+                ></div>
+                <div class="ml-5 text-area pr-5">
+                  <h4>Backup and Security</h4>
+                  <p>
+                    All your information and mails are kept safe and protected
+                    from any malicious attempt while being ready 24/7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content mx-5">
+                <div
+                  class="img img-left"
+                  style="
+                    background-image: url('https://i.kym-cdn.com/entries/icons/facebook/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg');
+                  "
+                ></div>
+                <div class="ml-5 text-area pr-5 mr-auto">
+                  <h4>Stonks</h4>
+                  <p>Stonks</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controll">
+            <a
+              class="carousel-control-prev"
+              href="#ReviewCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#ReviewCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div>
@@ -139,8 +247,8 @@
       <script src="https://unpkg.com/feather-icons"></script>
       <script>
         feather.replace();
-        $("#navbar").load("/Components/nav.html");
-        $("#sidebar").load("/Components/side.html");
+        $("#navbar").load("Components/nav.html");
+        $("#sidebar").load("Components/side.html");
       </script>
     </div>
   </body>
