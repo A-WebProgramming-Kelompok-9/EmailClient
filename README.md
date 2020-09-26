@@ -25,7 +25,7 @@
 > - [Registration](https://a-webprogramming-kelompok-9.github.io/EmailClient/register/Register.html)
 > - Forgot Password
 > - [Dashboard](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/dashboard.html)
->   - [Mail View](https://a-webprogramming-kelompok-9.github.io/EmailClient/View_Create/View_Email.html)
+>   - [Mail View](https://a-webprogramming-kelompok-9.github.io/EmailClient/View_Create/View_mail.html)
 > - [Settings](https://a-webprogramming-kelompok-9.github.io/EmailClient/Settings/Settings.html)
 
 ##### isi Dashboard:
