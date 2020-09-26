@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View mail Form</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- catalog js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- scss link-->
+    <link rel="stylesheet" href="..\Assets\Styles\Create_mail\Create_mail.css">
+</head>
+
+<body>
+
+    <div class="container boxing">
+        <div class="sidebar">
+            hOi sIdebAr
+        </div>
+        <div class="main ml-2">
+            <input type="text" class="form- m-3" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1">
+                <div class="mail-header">
+                    <!--Back Button-->
+                    <a class="btn btn-light btn-lg m-1" href="#">
+                        <i data-feather="arrow-left" style="height: 100%">
+                        </i>
+                    </a>
+                    <!-- Profile-picture and To-->
+                    <div class="media m-1">
+                        <img id="profilepic"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.change.org%2Fphotos%2F3%2Fvi%2Fnt%2FIPvinTvkGIZxmOt-1600x900-noPad.jpg%3F1539485029&f=1&nofb=1"
+                            alt="Avatar" class="rounded-circle" style="width: 100px; height: 100px;" />
+                        <div class="media-body mx-3 ">
+                            <h4>From : The Pillar Man &lt;<a href="#">ayaya@swagon.com</a>&gt;
+                            </h4>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">To: </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Recipient" aria-label="Recipient" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+                    </div>
+                    <!--Triple Button-->
+                    <div class="tri-btn">
+                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="trash-2"></i>
+                            Delete
+                        </a>
+                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="fast-forward"></i>
+                            Send
+                        </a>
+                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="archive"></i>
+                            Archive
+                        </a>
+                    </div>
+                </div>
+                <div class="mail-content m-3">
+                    <textarea class="text" rows="27"></textarea>
+                </div>
+
+        </div>
+    </div>
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
