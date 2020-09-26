@@ -27,7 +27,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- scss link-->
-    <link rel="stylesheet" href="..\Assets\Styles\View_mail\View_mail.css">
+    <link rel="stylesheet" href="..\Assets\Styles\Create_mail\Create_mail.css">
 </head>
 
 <body>
@@ -37,26 +37,27 @@
             hOi sIdebAr
         </div>
         <div class="main ml-2">
-            <h2 id="mailTitle">Title Mail</h4>
+            <input type="text" class="form- m-3" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1">
                 <div class="mail-header">
                     <!--Back Button-->
                     <a class="btn btn-light btn-lg m-1" href="#">
                         <i data-feather="arrow-left" style="height: 100%">
                         </i>
                     </a>
-                    <!-- Profile-picture, From, and To-->
+                    <!-- Profile-picture and To-->
                     <div class="media m-1">
                         <img id="profilepic"
                             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.change.org%2Fphotos%2F3%2Fvi%2Fnt%2FIPvinTvkGIZxmOt-1600x900-noPad.jpg%3F1539485029&f=1&nofb=1"
                             alt="Avatar" class="rounded-circle" style="width: 100px; height: 100px;" />
                         <div class="media-body mx-3 ">
                             <h4>From : The Pillar Man &lt;<a href="#">ayaya@swagon.com</a>&gt;
-                                <!--Block Button-->
-                                <a class="btn btn-outline-danger btn-sm" href="#">
-                                    <i data-feather="slash"></i> Block
-                                </a>
                             </h4>
-                            <h4>Sans the Skeleton &lt;<a href="#">meh@swagon.com</a>&gt;</h4>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">To: </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Recipient" aria-label="Recipient" aria-describedby="basic-addon1">
+                              </div>
                         </div>
                     </div>
                     <!--Triple Button-->
@@ -65,31 +66,15 @@
                             Delete
                         </a>
                         <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="fast-forward"></i>
-                            Forward
+                            Send
                         </a>
-                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="rewind"></i>
-                            Reply
+                        <a class="btn btn-light btn-sm align-top" href="#"><i data-feather="archive"></i>
+                            Archive
                         </a>
                     </div>
                 </div>
                 <div class="mail-content m-3">
-                    <textarea class="text" rows="27" readonly>
-Dear Helpdesk,
-Thank you for creating my account so fast.
-Though it is very funny, but how could i sell our products with an email address as bitch@accorhotel.com?
-Please change it ASAP.
-
-Thank you in advance.
-Bill Tchavlovsky
-_________________________________________________________
-
-Dear Mr Tchavlovsky
-Unfortunately account names are generated from your initials, we cannot change it.
-You can believe me.
-
-Regards,
-Ajani Erkson ajerk@accorhotel.com
-                    </textarea>
+                    <textarea class="text" rows="27"></textarea>
                 </div>
 
         </div>
