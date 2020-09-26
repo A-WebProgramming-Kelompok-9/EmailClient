@@ -1,0 +1,81 @@
+.Frameouter {
+  position: relative;
+  width: 802px;
+  height: 618px;
+  background: #938D8D;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.Frameinner {
+  position: absolute;
+  width: 756px;
+  height: 570px;
+  left: 22px;
+  top: 23px;
+  background: #DBEFF0;
+}
+
+.Frameinner .Background {
+  position: absolute;
+  width: 755px;
+  height: 571px;
+  left: -1px;
+  top: -1px;
+  background: url(Speed.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.1;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.header .title h1 {
+  text-decoration: underline;
+}
+
+.Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 718px;
+  height: 335px;
+  top: 123px;
+  left: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #7A6868;
+}
+
+.Founder {
+  position: absolute;
+  width: 328px;
+  height: 44px;
+  left: 409px;
+  top: 440px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #000000;
+}
+/*# sourceMappingURL=About.css.map */
