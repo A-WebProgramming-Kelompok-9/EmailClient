@@ -199,6 +199,16 @@ $gradient-radial: radial-gradient(
           }
         }
       }
+      #signup {
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          border-radius: 10px;
+          height: 450px;
+        }
+      }
     }
   }
 }

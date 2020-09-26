@@ -191,6 +191,25 @@
   background-position: right;
 }
 
+#index #bodycontainer #maincontent #signup {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#index #bodycontainer #maincontent #signup img {
+  border-radius: 10px;
+  height: 450px;
+}
+
 /*!
  -------------------------------------------
  */
