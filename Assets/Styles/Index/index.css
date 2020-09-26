@@ -116,6 +116,30 @@
   width: 350px;
 }
 
+#index #bodycontainer #reviews .carousel .carousel-item {
+  width: 500px;
+  height: 700px;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img-cent {
+  background-position: center;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img-left {
+  background-position: left;
+}
+
+#index #bodycontainer #reviews .carousel .carousel-item .img-right {
+  background-position: right;
+}
+
 /*!
  -------------------------------------------
  */

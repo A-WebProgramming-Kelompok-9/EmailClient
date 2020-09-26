@@ -144,6 +144,29 @@ $gradient-radial: radial-gradient(
         }
       }
     }
+    #reviews {
+      .carousel {
+        .carousel-item {
+          width: 500px;
+          height: 700px;
+          .img {
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+          }
+          .img-cent {
+            background-position: center;
+          }
+          .img-left {
+            background-position: left;
+          }
+          .img-right {
+            background-position: right;
+          }
+        }
+      }
+    }
   }
 }
 
