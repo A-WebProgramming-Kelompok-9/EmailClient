@@ -1,31 +1,36 @@
-.maincontainer {
+.boxing {
   display: flex;
-}
+  align-content: stretch;
 
-.inbox {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 250px);
-  background-color: rgb(176, 201, 255);
-  .search-area {
-    display: flex;
-    justify-content: space-around;
-    input {
-      width: 850px;
-      height: 38px;
-    }
-  }
-  .mail {
+  .main {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    height: calc(100vh - 70px);
-    .mail-items {
-      width: 100%;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    width: calc(100% - 250px);
+    height: 100vh;
+
+    h2 {
+      align-items: center;
+    }
+
+    .mail-header {
       display: flex;
-      padding: 20px;
-      .email-title {
-        width: 75%;
+      align-content: flex-start;
+      #backbtn {
+        display: flex;
+        align-items: center;
+      }
+      .tri-btn {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .mail-content {
+      textarea {
+        width: 100%;
+        overflow-y: auto;
       }
     }
   }

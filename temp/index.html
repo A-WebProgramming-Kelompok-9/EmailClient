@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>View mail Form</title>
 
     <link rel="stylesheet" href="../Assets/Styles/side.css" />
     <link rel="stylesheet" href="../Components/Styles/side.css" />
     <link rel="stylesheet" href="../Assets/Styles/temp.css" />
-
     <!-- bootstrap css -->
     <link
       rel="stylesheet"
@@ -21,136 +19,77 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-
-    <!-- bootstrap js -->
   </head>
 
   <body>
-    <div class="maincontainer">
+    <div class="maincontainer boxing">
       <div id="sidebar"></div>
-      <div class="inbox">
-        <div class="search-area m-4">
-          <div class="input-group">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search mail"
+      <div class="main">
+        <h2 id="mailTitle" class="px-5">Title Mail</h2>
+        <div class="mail-header">
+          <!--Back Button-->
+          <a class="btn btn-light my-1" id="backbtn" href="#">
+            <i data-feather="arrow-left"> </i>
+          </a>
+          <!-- Profile-picture, From, and To-->
+          <div class="media m-1">
+            <img
+              id="profilepic"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.change.org%2Fphotos%2F3%2Fvi%2Fnt%2FIPvinTvkGIZxmOt-1600x900-noPad.jpg%3F1539485029&f=1&nofb=1"
+              alt="Avatar"
+              class="rounded-circle"
+              style="width: 100px; height: 100px"
             />
-            <div class="input-group-append">
-              <button class="btn btn-outline-success" type="submit">
-                <i data-feather="search"></i>
-              </button>
+            <div class="media-body mx-3">
+              <h4>
+                From : The Pillar Man &lt;<a href="#">ayaya@swagon.com</a>&gt;
+                <!--Block Button-->
+                <a class="btn btn-outline-danger btn-sm" href="#">
+                  <i data-feather="slash"></i> Block
+                </a>
+              </h4>
+              <h4>Sans the Skeleton &lt;<a href="#">meh@swagon.com</a>&gt;</h4>
             </div>
           </div>
-          <button class="btn btn-success" type="submit">
-            <i data-feather="file-plus"></i> Compose
-          </button>
+          <!--Triple Button-->
+          <div class="tri-btn">
+            <a class="btn btn-light btn-sm align-top" href="#"
+              ><i data-feather="trash-2"></i>
+              Delete
+            </a>
+            <a class="btn btn-light btn-sm align-top" href="#"
+              ><i data-feather="fast-forward"></i>
+              Forward
+            </a>
+            <a class="btn btn-light btn-sm align-top" href="#"
+              ><i data-feather="rewind"></i>
+              Reply
+            </a>
+          </div>
         </div>
+        <div class="mail-content m-2">
+          <textarea class="text" rows="31" readonly>
+Dear Helpdesk,
+Thank you for creating my account so fast.
+Though it is very funny, but how could i sell our products with an email address as bitch@accorhotel.com?
+Please change it ASAP.
 
-        <div class="mail">
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
+Thank you in advance.
+Bill Tchavlovsky
+_________________________________________________________
 
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
+Dear Mr Tchavlovsky
+Unfortunately account names are generated from your initials, we cannot change it.
+You can believe me.
 
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
-          <div class="mail-items">
-            <div class="mr-3"><i data-feather="star"></i></div>
-
-            SENDER@email.com
-            <span class="email-title px-5">Title Email</span>
-            <span> 10/09/2020</span>
-          </div>
+Regards,
+Ajani Erkson ajerk@accorhotel.com
+                </textarea
+          >
         </div>
       </div>
     </div>
 
-    <!-- feather icons -->
     <div id="script-area">
       <script src="https://unpkg.com/feather-icons"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -164,6 +103,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"
       ></script>
+
       <script>
         feather.replace();
         $("#sidebar").load("../Components/side.html");
