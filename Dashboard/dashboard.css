@@ -47,7 +47,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: scroll;
-  height: 720px;
+  height: 740px;
 }
 
 .inbox .mail .mail-items {
@@ -60,5 +60,20 @@
 
 .inbox .mail .mail-items .email-title {
   width: 75%;
+}
+
+.inbox .mail::-webkit-scrollbar {
+  width: 10px;
+}
+
+.inbox .mail::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.inbox .mail::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.288);
+  outline: 1px solid slategrey;
+  border-radius: 100px;
 }
 /*# sourceMappingURL=dashboard.css.map */

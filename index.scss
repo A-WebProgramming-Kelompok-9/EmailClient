@@ -1,80 +1,4 @@
-$gray-100: #e6e6fa;
-$brown-200: rgba(167, 125, 82, 1);
-$brown-100: rgba(254, 243, 195, 1);
-$brown-300: rgba(67, 51, 28, 1);
-
-/* SCSS Gradient */
-$gradient-top: linear-gradient(
-  0deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-right: linear-gradient(
-  90deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-bottom: linear-gradient(
-  180deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-left: linear-gradient(
-  270deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-top-right: linear-gradient(
-  45deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-bottom-right: linear-gradient(
-  135deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-top-left: linear-gradient(
-  225deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-bottom-left: linear-gradient(
-  315deg,
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
-$gradient-radial: radial-gradient(
-  #a77d52ff,
-  #fef3c3ff,
-  #43331cff,
-  #fef3c3ff,
-  #a77d52ff
-);
+@import "./color";
 
 .bg-gray-100 {
   background-color: $gray-100;
@@ -96,11 +20,15 @@ $gradient-radial: radial-gradient(
   border-left: 1px solid black;
 }
 
+html {
+  font-size: 120%;
+}
+
 #index {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $brown-200 45%),
-    url(../../Speedwagon_sepia.jpg) no-repeat $brown-200;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $brown-200 90%),
+    url(./assets/Speedwagon_sepia.jpg) no-repeat $brown-200;
   background-position: 0px -130px;
-  background-size: 100vw;
+  background-size: 100vw 100vh;
   height: 100%;
 
   &::-webkit-scrollbar {
@@ -125,7 +53,7 @@ $gradient-radial: radial-gradient(
     align-items: center;
     #welcome {
       width: 60%;
-      margin-top: 470px;
+      margin-top: 50vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -137,9 +65,27 @@ $gradient-radial: radial-gradient(
       }
     }
     #maincontent {
-      width: 80%;
+      width: 100%;
       #features {
-        background-color: rgba(0, 0, 0, 0.2);
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 100px;
+
+        .item-content {
+          display: flex;
+          justify-items: flex-start;
+          margin: 50px 0;
+          img {
+            width: 300px;
+            height: 200px;
+          }
+        }
+        .reverse {
+          flex-direction: row-reverse;
+        }
+      }
+      #reviews {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -167,38 +113,7 @@ $gradient-radial: radial-gradient(
           }
         }
       }
-      #reviews {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .carousel {
-          width: 500px;
-          .carousel-item {
-            height: 400px;
-            .content {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
 
-              .img {
-                width: 200px;
-                height: 200px;
-                background-size: cover;
-                background-position: center;
-              }
-              .img-cent {
-                background-position: center;
-              }
-              .img-left {
-                background-position: left;
-              }
-              .img-right {
-                background-position: right;
-              }
-            }
-          }
-        }
-      }
       #signup {
         background-color: rgba(0, 0, 0, 0.2);
         display: flex;
