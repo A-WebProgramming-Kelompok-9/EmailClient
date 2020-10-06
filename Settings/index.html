@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- bootstrap css -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -8,152 +13,108 @@
       crossorigin="anonymous"
     />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="Settings.css">
+    <link rel="stylesheet" href="../Assets/Styles/side.css" />
+    <link rel="stylesheet" href="../Components/Styles/side.css" />
+    <link rel="stylesheet" href="../Assets/Styles/Settings/Settings.css" />
 
+    <!-- bootstrap js -->
   </head>
+
   <body>
-    <div class="d-flex" id="wrapper">
+    <div class="maincontainer">
       <div id="sidebar"></div>
-      <div id="page-content-wrapper">
-        <div
-          class="col-xs-10 bg-light navbar-light"
-          style="
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            margin-left: 220px;
-            padding: 20px;
-          "
-        >
-          <div class="navbar-nav" style="margin-left: 10px">
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search mail"
-                aria-label="Search"
-                style="width: 850px; bottom: 5px; left: 10px"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-                style="position: relative; left: 10px; bottom: 5.4px"
-              >
+      <div id="maincontent">
+        <div class="search-area m-4">
+          <div class="input-group search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search mail"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-outline-success" type="submit">
                 <i data-feather="search"></i>
               </button>
-              <div style="padding: 20px"></div>
-            </form>
-          </div>
-        </div>
-        <div class="container">
-          <div class="pengaturan">
-            <div class="row">
-              <div class="col-sm">
-                <div class="titlesettings">
-                <h3>Settings</h3>
-              </div>
-                <hr />
-                <div class="list">
-                <button type="button" class="btn btn-outline-secondary">
-                  My Settings
-                </button>
-              </div>
-                <hr />
-                <p class="myacc">My Account :</p>
-                <div class="dp">
-                <span class="lingkaran"></span>
-              </div>
-                <hr />
-                <div class="pass">
-                  <p>Change your password :</p>
-                  <div class="oldpass">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Old Password"
-                    aria-label="Old Password"
-                    aria-describedby="basic-addon1"
-                  />
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                  >
-                    Check
-                  </button>
-                </div>
-                <div class="newpass">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="New Password"
-                    aria-label="New Password"
-                    aria-describedby="basic-addon1"
-                  />
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div>
-              <div class="nama">
-                <p>Change your username : </p>
-                <input
-                    type="text"
-                    class="form-control"
-                    placeholder="New Username"
-                    aria-label="New Username"
-                    aria-describedby="basic-addon1"
-                  />
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                  >
-                    Submit
-                  </button>
-              </div>
-                <div class="account">
-                <p class="useremail">xxxxxxxxx@speedwagon.com</p>
-                <div class="buttonlink">
-                <p class="user">Jonathan Joestar</p>
-                <button
-                  type="button"
-                  class="pic btn btn-link"
-                >
-                  Change your Picture
-                </button>
-                <button
-                  type="button"
-                  class="back btn btn-link"
-                >
-                  Change your Background
-                </button>
-              </div>
-                </div>
-              </div>
             </div>
           </div>
+          <button class="btn btn-success">
+            <i data-feather="file-plus"></i> Compose
+          </button>
+        </div>
+        <div id="settings" class="p-3">
+          <h1>Settings</h1>
+          <hr />
+          <div id="Myaccount-area">
+            <h5>my Account:</h5>
+            <div id="profile-pic" class="mr-3"></div>
+            <div id="accinfo">
+              <p>xxxxxxxxxxxxx@speedwagon.com</p>
+              <p>Jonathan Joestar</p>
+              <a href="#">Change your Picture</a>
+              <a href="#">Change your Background</a>
+            </div>
+          </div>
+          <hr />
+          <div id="changepass">
+            <h5>Change your Password</h5>
+            <div class="inputarea mt-3">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="Old Password"
+              />
+              <input
+                class="form-control"
+                type="password"
+                placeholder="New Password"
+              />
+              <input
+                class="form-control"
+                type="password"
+                placeholder="Confirm New Password"
+              />
+              <button type="button" class="btn btn-primary">
+                Change Password
+              </button>
+            </div>
+          </div>
+          <hr />
+          <div id="changeusername">
+            <h5>Change Username</h5>
+            <div class="input-group my-3">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="New Username"
+              />
+              <button type="button" class="btn btn-primary input-group-append">
+                Change Username
+              </button>
+            </div>
+          </div>
+          <hr />
         </div>
       </div>
     </div>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-      feather.replace();
-      $("#navbar").load("Components/nav.html");
-      $("#sidebar").load("Components/side.html");
-    </script>
+    <!-- feather icons -->
+    <div id="script-area">
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        feather.replace();
+        $("#sidebar").load("../Components/side.html");
+      </script>
+    </div>
   </body>
 </html>
