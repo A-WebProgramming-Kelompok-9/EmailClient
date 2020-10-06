@@ -117,6 +117,7 @@ html {
 }
 
 #index #bodycontainer #maincontent #features .item-content img {
+  border-radius: 10px;
   width: 300px;
   height: 200px;
 }
