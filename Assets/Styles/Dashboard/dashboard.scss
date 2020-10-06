@@ -6,20 +6,23 @@
   display: flex;
   flex-direction: column;
   width: calc(100% - 250px);
-  background-color: rgb(176, 201, 255);
+  background-color: whitesmoke;
   .search-area {
     display: flex;
-    justify-content: space-around;
-    input {
-      width: 850px;
-      height: 38px;
+    justify-content: space-between;
+    .search {
+      width: 980px;
+    }
+    .btn {
+      display: flex;
+      justify-content: space-between;
     }
   }
   .mail {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: calc(100vh - 70px);
+    height: 720px;
     .mail-items {
       width: 100%;
       display: flex;

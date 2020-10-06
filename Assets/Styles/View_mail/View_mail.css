@@ -1,4 +1,4 @@
-.boxing {
+.maincontainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,7 +6,7 @@
       align-content: stretch;
 }
 
-.boxing .main {
+.maincontainer .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,21 +22,22 @@
   height: 100vh;
 }
 
-.boxing .main h2 {
+.maincontainer .main h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.boxing .main .mail-header {
+.maincontainer .main .mail-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  width: 100%;
 }
 
-.boxing .main .mail-header #backbtn {
+.maincontainer .main .mail-header #backbtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +46,11 @@
           align-items: center;
 }
 
-.boxing .main .mail-header .tri-btn {
+.maincontainer .main .mail-header .media h4 {
+  font-size: large;
+}
+
+.maincontainer .main .mail-header .tri-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +60,7 @@
           flex-direction: column;
 }
 
-.boxing .main .mail-content textarea {
+.maincontainer .main .mail-content textarea {
   width: 100%;
   overflow-y: auto;
 }

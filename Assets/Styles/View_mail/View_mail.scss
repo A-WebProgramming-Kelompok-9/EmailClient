@@ -1,4 +1,4 @@
-.boxing {
+.maincontainer {
   display: flex;
   align-content: stretch;
 
@@ -17,9 +17,15 @@
     .mail-header {
       display: flex;
       align-content: flex-start;
+      width: 100%;
       #backbtn {
         display: flex;
         align-items: center;
+      }
+      .media {
+        h4 {
+          font-size: large;
+        }
       }
       .tri-btn {
         display: flex;
