@@ -1,29 +1,33 @@
 <div class="bg-light flex-col" id="sidebar-wrapper">
-  <a class="navbar-brand my-2" href="#">
+  <a class="navbar-brand my-2" href="/Dashboard/">
     <div id="sidebar-image-brand"></div>
     Speedwagon Mail</a
   >
 
   <div class="list-group list-group-flush mt-2">
-    <a href="#" class="list-group-item list-group-item-action bg-light"
+    <a href="#Inbox" class="list-group-item list-group-item-action bg-light"
       >Inbox</a
     >
-    <a href="#" class="list-group-item list-group-item-action bg-light"
+    <a href="#Unread" class="list-group-item list-group-item-action bg-light"
       >Unread</a
     >
-    <a href="#" class="list-group-item list-group-item-action bg-light">Sent</a>
-    <a href="#" class="list-group-item list-group-item-action bg-light"
+    <a href="#Sent" class="list-group-item list-group-item-action bg-light"
+      >Sent</a
+    >
+    <a href="#Favourite" class="list-group-item list-group-item-action bg-light"
       >Favourite</a
     >
-    <a href="#" class="list-group-item list-group-item-action bg-light">Spam</a>
+    <a href="#Spam" class="list-group-item list-group-item-action bg-light"
+      >Spam</a
+    >
   </div>
 
   <div class="profile flex mt-auto mb-2">
     <div class="flex-col">
       <p>Email@speedwagon.com</p>
       <div class="flex">
-        <p>Logout</p>
-        <p>Profile</p>
+        <a href="/">Logout</a>
+        <a href="/Dashboard/Settings">Profile</a>
       </div>
     </div>
     <img
