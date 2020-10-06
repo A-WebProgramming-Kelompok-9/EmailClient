@@ -105,7 +105,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 100px;
+  margin: 0 200px;
 }
 
 #index #bodycontainer #maincontent #features .item-content {
