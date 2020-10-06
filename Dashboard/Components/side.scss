@@ -6,19 +6,24 @@
   display: flex;
 }
 #sidebar-wrapper {
-  width: 18rem;
+  height: 100vh;
+  width: 250px;
   align-items: center;
   .navbar-brand {
+    display: flex;
+    height: 100px;
+    align-items: center;
     img {
-      height: 75px;
-      width: 75px;
+      height: 60px;
+      width: 60px;
     }
   }
   .list-group {
-    width: 95%;
+    width: 100%;
     font-size: larger;
     .list-group-item {
-      height: 3.5rem;
+      align-items: center;
+      height: 50px;
     }
   }
   .profile {

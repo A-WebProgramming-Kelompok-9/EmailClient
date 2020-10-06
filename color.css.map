@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,mBAAmB",
+    "sources": [
+        "color.scss"
+    ],
+    "names": [],
+    "file": "color.css"
+}

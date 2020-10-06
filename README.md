@@ -17,41 +17,18 @@
 
 # [TUGAS UTS - Front end](https://a-webprogramming-kelompok-9.github.io/EmailClient/)
 
+[Link](https://a-webprogramming-kelompok-9.github.io/EmailClient/)
+
 ### Page List
 
 > - [Landing Page](https://a-webprogramming-kelompok-9.github.io/EmailClient/)
-> - [About Us]()
-> - [Login Page](https://a-webprogramming-kelompok-9.github.io/EmailClient/login/Login.html)
-> - [Registration](https://a-webprogramming-kelompok-9.github.io/EmailClient/register/Register.html)
-> - Forgot Password
-> - [Dashboard](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/dashboard.html)
->   - [Mail View](https://a-webprogramming-kelompok-9.github.io/EmailClient/View_Create/View_mail.html)
-> - [Settings](https://a-webprogramming-kelompok-9.github.io/EmailClient/Settings/Settings.html)
-
-##### isi Dashboard:
-
-> - Create new email
-> - submenu
->   - inbox
->   - unread
->   - sent
->   - favourite
->   - spam
-> - List Email yang diterima
-> - mail view
->   - read mode (baca email yang diterima)
->   - create mode (bikin email buat dikitim)
-
-##### isi landing page dan about us
-
-> - Pake Navbar
->   - Logo
->   - Home
->   - About us
->   - Login
-
-##### isi login dan register
-
-> Model login myanimelist
+> - [About Us](https://a-webprogramming-kelompok-9.github.io/EmailClient/AboutUs/)
+> - [Login Page](https://a-webprogramming-kelompok-9.github.io/EmailClient/Login/)
+> - [Registration](https://a-webprogramming-kelompok-9.github.io/EmailClient/Register/)
+> - [Forgot Password](https://a-webprogramming-kelompok-9.github.io/EmailClient/ForgotUs/)
+> - [Dashboard](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/)
+>   - [Mail View](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/View/)
+>   - [Create Mail](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/Create/)
+>   - [Settings](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/Settings/)
 
 # TUGAS UAS - Back end

@@ -1,0 +1,70 @@
+.maincontainer {
+  display: flex;
+}
+
+#maincontent {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 250px);
+  background-color: whitesmoke;
+  .search-area {
+    display: flex;
+    justify-content: space-between;
+    .search {
+      width: 980px;
+    }
+    .btn {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  #settings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 700px;
+    border: solid 1px gray;
+    width: 800px;
+    margin: 0 auto;
+    #Myaccount-area {
+      display: flex;
+      #profile-pic {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        background-color: black;
+      }
+      #accinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    #changepass {
+      .inputarea {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        input {
+          width: 700px;
+        }
+        button {
+          width: 180px;
+        }
+      }
+    }
+    #changeusername {
+      input {
+        width: 540px;
+      }
+      .btn {
+        width: 160px;
+      }
+    }
+  }
+}

@@ -28,11 +28,15 @@
   border-left: 1px solid black;
 }
 
+html {
+  font-size: 120%;
+}
+
 #index {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(45%, #a77d52)), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 45%), url(../../Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(90%, #a77d52)), url(./assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #a77d52 90%), url(./assets/Speedwagon_sepia.jpg) no-repeat #a77d52;
   background-position: 0px -130px;
-  background-size: 100vw;
+  background-size: 100vw 100vh;
   height: 100%;
 }
 
@@ -67,7 +71,7 @@
 
 #index #bodycontainer #welcome {
   width: 60%;
-  margin-top: 470px;
+  margin-top: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,11 +93,11 @@
 }
 
 #index #bodycontainer #maincontent {
-  width: 80%;
+  width: 100%;
 }
 
 #index #bodycontainer #maincontent #features {
-  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,41 +105,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 200px;
 }
 
-#index #bodycontainer #maincontent #features h4 {
-  font-weight: normal;
-}
-
-#index #bodycontainer #maincontent #features .carousel {
-  border-radius: 10px;
-  width: 70vw;
-  height: 350px;
-}
-
-#index #bodycontainer #maincontent #features .carousel .carousel-item .content {
-  margin-top: 20px;
+#index #bodycontainer #maincontent #features .item-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-items: flex-start;
+  margin: 50px 0;
 }
 
-#index #bodycontainer #maincontent #features .carousel .carousel-item .content .text-area {
-  width: 470px;
+#index #bodycontainer #maincontent #features .item-content img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
 }
 
-#index #bodycontainer #maincontent #features .carousel .carousel-item .content img {
-  height: 250px;
-  width: 350px;
+#index #bodycontainer #maincontent #features .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 #index #bodycontainer #maincontent #reviews {
@@ -151,44 +142,36 @@
           align-items: center;
 }
 
-#index #bodycontainer #maincontent #reviews .carousel {
-  width: 500px;
+#index #bodycontainer #maincontent #reviews h4 {
+  font-weight: normal;
 }
 
-#index #bodycontainer #maincontent #reviews .carousel .carousel-item {
-  height: 400px;
+#index #bodycontainer #maincontent #reviews .carousel {
+  border-radius: 10px;
+  width: 70vw;
+  height: 350px;
 }
 
 #index #bodycontainer #maincontent #reviews .carousel .carousel-item .content {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .text-area {
+  width: 470px;
 }
 
-#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img-cent {
-  background-position: center;
-}
-
-#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img-left {
-  background-position: left;
-}
-
-#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content .img-right {
-  background-position: right;
+#index #bodycontainer #maincontent #reviews .carousel .carousel-item .content img {
+  height: 250px;
+  width: 350px;
 }
 
 #index #bodycontainer #maincontent #signup {

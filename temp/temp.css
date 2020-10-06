@@ -1,0 +1,119 @@
+.maincontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#maincontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% - 250px);
+  background-color: whitesmoke;
+}
+
+#maincontent .search-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#maincontent .search-area .search {
+  width: 980px;
+}
+
+#maincontent .search-area .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#maincontent #settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 700px;
+  border: solid 1px gray;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#maincontent #settings #Myaccount-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#maincontent #settings #Myaccount-area #profile-pic {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+#maincontent #settings #Myaccount-area #accinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#maincontent #settings #Myaccount-area #accinfo p {
+  margin: 0;
+}
+
+#maincontent #settings #changepass .inputarea {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#maincontent #settings #changepass .inputarea input {
+  width: 700px;
+}
+
+#maincontent #settings #changepass .inputarea button {
+  width: 180px;
+}
+
+#maincontent #settings #changeusername input {
+  width: 540px;
+}
+
+#maincontent #settings #changeusername .btn {
+  width: 160px;
+}
+/*# sourceMappingURL=temp.css.map */
