@@ -1,36 +1,47 @@
-.main
-{
-    width: 400px;
-    height: 100%;
-    background-color:white;
-    margin: auto;
-    padding: 10px;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-.input
-{
-    text-align: left;
-}
-
-ul
-{
-    text-align: center;
-    li
-    {
-        padding: 10px;
-        display: inline-block;
+.main {
+  width: 500px;
+  height: 680px;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  border: solid 1px rgba($color: gray, $alpha: 0.7);
+  border-radius: 20px;
+  text-align: center;
+  h5 {
+    font-size: 97%;
+  }
+  .spacer {
+    margin: 1rem auto 2rem auto;
+    background-color: rgba($color: gray, $alpha: 0.7);
+    width: 90%;
+    height: 1px;
+  }
+  .registerwith {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    .btn {
+      width: 110px;
     }
+  }
 
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    .form-check {
+      display: flex;
+      align-items: center;
+    }
+    .btn {
+      margin-top: 10px;
+      width: 200px;
+      align-self: center;
+    }
+  }
 }
-
-
-
-.createbutton
-{
-    margin: auto;
-    padding: 50px;
-}
-

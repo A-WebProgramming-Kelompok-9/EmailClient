@@ -26,8 +26,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 400px;
-  height: 550px;
+  width: 420px;
+  height: 580px;
   background-color: white;
   margin: auto;
   padding: 10px;
