@@ -1,44 +1,11 @@
-.maincontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.flex-end {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-#maincontent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: calc(100% - 250px);
-  background-color: whitesmoke;
-}
-
-#maincontent .search-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#maincontent .search-area .search {
-  width: 980px;
-}
-
-#maincontent .search-area .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#maincontent #settings {
+body {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,29 +13,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  height: 700px;
-  border: solid 1px gray;
-  width: 800px;
-  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#maincontent #settings #Myaccount-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#maincontent #settings #Myaccount-area #profile-pic {
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  background-color: black;
-}
-
-#maincontent #settings #Myaccount-area #accinfo {
+#main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,16 +26,37 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  border: solid 1px rgba(128, 128, 128, 0.7);
+  border-radius: 10px;
+}
+
+#main .spacer {
+  margin: 1rem auto 2rem auto;
+  background-color: rgba(128, 128, 128, 0.7);
+  width: 90%;
+  height: 1px;
+}
+
+#main .loginwith {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#main .loginwith .loginopt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-#maincontent #settings #Myaccount-area #accinfo p {
-  margin: 0;
-}
-
-#maincontent #settings #changepass .inputarea {
-  height: 200px;
+#main .login-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,27 +64,32 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
-#maincontent #settings #changepass .inputarea input {
-  width: 700px;
+#main .alternate {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#maincontent #settings #changepass .inputarea button {
-  width: 180px;
+#main .alternate .forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
-#maincontent #settings #changeusername input {
-  width: 540px;
-}
-
-#maincontent #settings #changeusername .btn {
-  width: 160px;
+#main .alternate .btn {
+  font-size: small;
 }
 /*# sourceMappingURL=temp.css.map */

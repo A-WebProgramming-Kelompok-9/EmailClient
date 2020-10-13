@@ -1,40 +1,57 @@
-.main
-{
-    width: 400px;
-    height: 100%;
-    background-color:white;
-    margin: auto;
-    padding: 10px;
-    border-style: solid;
-    border-color: black;
-    .loginwith
-    {
-        text-align: center;
-    }
-    
-    .loginbutton
-    {
-        text-align: center;
-        padding: 10px;
-    }
-    .input
-    {
-        text-align: left;
-    }
-    
+.flex-end {
+  align-self: center;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-ul
-{
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  border: solid 1px rgba($color: gray, $alpha: 0.7);
+  border-radius: 10px;
+  .spacer {
+    margin: 1rem auto 2rem auto;
+    background-color: rgba($color: gray, $alpha: 0.7);
+    width: 90%;
+    height: 1px;
+  }
+  .loginwith {
+    margin-top: 10px;
     text-align: center;
+    .loginopt {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .alternate {
+    //margin-top: 20px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+
+    .forgot {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .btn {
+      font-size: small;
+    }
+  }
 }
-
-li
-{
-    padding: 10px;
-    display: inline-block;
-}
-
-
-

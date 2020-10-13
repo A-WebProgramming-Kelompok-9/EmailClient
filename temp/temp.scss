@@ -1,70 +1,57 @@
-.maincontainer {
-  display: flex;
+.flex-end {
+  align-self: center;
 }
-
-#maincontent {
+body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 250px);
-  background-color: whitesmoke;
-  .search-area {
-    display: flex;
-    justify-content: space-between;
-    .search {
-      width: 980px;
-    }
-    .btn {
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  border: solid 1px rgba($color: gray, $alpha: 0.7);
+  border-radius: 10px;
+  .spacer {
+    margin: 1rem auto 2rem auto;
+    background-color: rgba($color: gray, $alpha: 0.7);
+    width: 90%;
+    height: 1px;
+  }
+  .loginwith {
+    margin-top: 10px;
+    text-align: center;
+    .loginopt {
       display: flex;
-      justify-content: space-between;
+      width: 100%;
+      justify-content: space-around;
     }
   }
-  #settings {
+
+  .login-form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    height: 700px;
-    border: solid 1px gray;
-    width: 800px;
-    margin: 0 auto;
-    #Myaccount-area {
+  }
+  .alternate {
+    //margin-top: 20px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+
+    .forgot {
       display: flex;
-      #profile-pic {
-        height: 100px;
-        width: 100px;
-        border-radius: 100%;
-        background-color: black;
-      }
-      #accinfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        p {
-          margin: 0;
-        }
-      }
+      align-self: center;
+      justify-content: center;
+      width: 100%;
     }
-    #changepass {
-      .inputarea {
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        input {
-          width: 700px;
-        }
-        button {
-          width: 180px;
-        }
-      }
-    }
-    #changeusername {
-      input {
-        width: 540px;
-      }
-      .btn {
-        width: 160px;
-      }
+    .btn {
+      font-size: small;
     }
   }
 }
