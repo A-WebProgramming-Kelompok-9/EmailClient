@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View mail Form</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
 
-    <link rel="stylesheet" href="../Components/side.css" />
-    <link rel="stylesheet" href="./View_mail.css" />
+    <link rel="stylesheet" href="./Components/side.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
+
     <!-- bootstrap css -->
     <link
       rel="stylesheet"
@@ -14,19 +16,28 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../Components/side.css" />
+
+    <link rel="stylesheet" href="./temp.css" />
   </head>
 
   <body>
-    <div class="maincontainer">
+    <div class="boxing">
       <div id="sidebar"></div>
       <div class="main">
-        <h2 id="mailTitle" class="px-5">Title Mail</h2>
+        <input
+          type="text"
+          class="form my-3 ml-3"
+          placeholder="Title"
+          aria-label="Title"
+          aria-describedby="basic-addon1"
+        />
         <div class="mail-header">
           <!--Back Button-->
-          <a class="btn btn-light my-1" id="backbtn" href="..">
-            <i data-feather="arrow-left"> </i>
+          <a class="btn btn-light btn-lg m-1" href="#">
+            <i data-feather="arrow-left" style="height: 100%"> </i>
           </a>
-          <!-- Profile-picture, From, and To-->
+          <!-- Profile-picture and To-->
           <div class="media m-1">
             <img
               id="profilepic"
@@ -38,47 +49,43 @@
             <div class="media-body mx-3">
               <h4>
                 From : The Pillar Man &lt;<a href="#">ayaya@swagon.com</a>&gt;
-                <!--Block Button-->
-                <a class="btn btn-outline-danger btn-sm" href="#">
-                  <i data-feather="slash"></i> Block
-                </a>
               </h4>
-              <h4>Sans the Skeleton &lt;<a href="#">meh@swagon.com</a>&gt;</h4>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">To: </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Recipient"
+                  aria-label="Recipient"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
             </div>
           </div>
           <!--Triple Button-->
-          <div class="tri-btn ml-auto">
+          <div class="tri-btn">
             <a class="btn btn-light btn-sm align-top" href="#"
               ><i data-feather="trash-2"></i>
               Delete
             </a>
             <a class="btn btn-light btn-sm align-top" href="#"
               ><i data-feather="fast-forward"></i>
-              Forward
+              Send
             </a>
             <a class="btn btn-light btn-sm align-top" href="#"
-              ><i data-feather="rewind"></i>
-              Reply
+              ><i data-feather="archive"></i>
+              Archive
             </a>
           </div>
         </div>
         <div class="mail-content m-2">
-          <textarea class="text" rows="" readonly>
-Attn My Dear:
-
-We wish to inform you that the diplomatic agent conveying the consignment box valued the sum of $8.8 Million United States Dollars misplaced your address and he is currently stranded at your International airport now. We required you reconfirm the following information below so that he can deliver your consignment box to you today.
-            
-NAME:================== COUNTRY:================ CITY:================== HOME ADDRESS: =============== MOBILE NO.:============= NAME OF YOUR NEAREST AIRPORT:======== A COPY OF YOUR IDENTIFICATION :===============
-            
-Please do contact the diplomatic agent with the email below with the information required. Contact Person : Mr. Beneth Nicolas EMAIL;( benethnicolas42@gmail.com) He is waiting to hear from you today with the information. NOTE : The Diplomatic agent does not know that the content of the consignment box is $8.8 Millions United States Dollars and on no circumstances should you let him know the content. The consignments was moved from here as family treasures, so never allow him to open the box.
-            
-Best Regards, Mrs. Sandra Ben
-                </textarea
-          >
+          <textarea class="text" rows="26" readonly> </textarea>
         </div>
       </div>
     </div>
-
+    <!-- feather icons -->
     <div id="script-area">
       <script src="https://unpkg.com/feather-icons"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -92,7 +99,6 @@ Best Regards, Mrs. Sandra Ben
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"
       ></script>
-
       <script>
         feather.replace();
         $("#sidebar").load("../Components/side.html");

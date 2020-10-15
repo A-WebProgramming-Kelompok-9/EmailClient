@@ -31,20 +31,6 @@
       align-content: flex-start;
 }
 
-.boxing .main .mail-header .media {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.boxing .main .mail-header .media h4 {
-  font-size: large;
-}
-
-.boxing .main .mail-header .media input {
-  width: 50vw;
-}
-
 .boxing .main .mail-header .tri-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,20 +42,9 @@
   margin-left: auto;
 }
 
-.boxing .main .mail-header .tri-btn a {
-  width: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .boxing .main .mail-content textarea {
   width: 100%;
   overflow-y: auto;
-  height: calc(100vh - 200px);
 }
 
 .boxing .main .mail-content textarea::-webkit-scrollbar {
@@ -86,4 +61,4 @@
   outline: 1px solid slategrey;
   border-radius: 100px;
 }
-/*# sourceMappingURL=Create_mail.css.map */
+/*# sourceMappingURL=temp.css.map */

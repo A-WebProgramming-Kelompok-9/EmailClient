@@ -47,7 +47,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: scroll;
-  height: 740px;
+  height: calc(100vh - 100px);
 }
 
 .inbox .mail .mail-items {
