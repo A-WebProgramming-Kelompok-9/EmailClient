@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     .search {
-      width: 980px;
+      width: calc(100vw - 450px);
     }
     .btn {
       display: flex;

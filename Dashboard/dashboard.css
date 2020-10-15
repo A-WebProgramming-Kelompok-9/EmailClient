@@ -26,7 +26,7 @@
 }
 
 .inbox .search-area .search {
-  width: 980px;
+  width: calc(100vw - 450px);
 }
 
 .inbox .search-area .btn {
