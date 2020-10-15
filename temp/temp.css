@@ -18,14 +18,6 @@ body {
           align-items: center;
 }
 
-p {
-  font-size: small;
-}
-
-.norm {
-  font-size: medium;
-}
-
 #main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,4 +80,8 @@ p {
           justify-content: center;
   width: 100%;
 }
-/*# sourceMappingURL=forgotpassword.css.map */
+
+#main .alternate .btn {
+  font-size: small;
+}
+/*# sourceMappingURL=temp.css.map */
