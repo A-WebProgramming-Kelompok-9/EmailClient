@@ -2,8 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
 }
 
 .maincontainer .main {
@@ -15,11 +13,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: whitesmoke;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 5px;
   width: calc(100% - 250px);
-  height: 100vh;
 }
 
 .maincontainer .main h2 {
@@ -34,7 +29,6 @@
   display: flex;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  width: 100%;
 }
 
 .maincontainer .main .mail-header #backbtn {
@@ -73,7 +67,7 @@
 .maincontainer .main .mail-content textarea {
   width: 100%;
   overflow-y: auto;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 170px);
 }
 
 .maincontainer .main .mail-content textarea::-webkit-scrollbar {

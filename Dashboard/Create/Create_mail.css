@@ -13,6 +13,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: whitesmoke;
+  padding: 5px;
   width: 100%;
 }
 
@@ -69,7 +70,7 @@
 .boxing .main .mail-content textarea {
   width: 100%;
   overflow-y: auto;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 190px);
 }
 
 .boxing .main .mail-content textarea::-webkit-scrollbar {
