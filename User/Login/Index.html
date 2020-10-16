@@ -9,7 +9,7 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./temp.css" />
+    <link rel="stylesheet" href="./login.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -25,34 +25,50 @@
   </head>
   <body>
     <div id="main">
-      <h4>Recover Account</h4>
-      <div class="intro">
-        <p>Please insert your username and alternate email address</p>
-        <p>
-          Our team will contact you shortly after to confirm your data validity.
-          Please be sure to check your email's spam / junk folders
-        </p>
+      <div class="loginwith">
+        <h4>Login</h4>
+        <div class="loginopt my-4">
+          <a type="button" class="btn btn-link">
+            <span class="fa fa-facebook"></span>
+            Facebook
+          </a>
+          <a type="button" class="btn btn-link">
+            <span class="fa fa-twitter"></span>
+            twitter
+          </a>
+          <a type="button" class="btn btn-link">
+            <span class="fa fa-google"></span>
+            Google
+          </a>
+        </div>
       </div>
       <div class="spacer"></div>
-      <form class="recover-form">
+      <form class="login-form">
         <div class="form-group">
           <label for="UsernameBox">Username</label>
           <input type="text" class="form-control" id="UsernameBox" />
         </div>
         <div class="form-group">
-          <label for="EmailBox">Alternative Email</label>
-          <input type="email" class="form-control" id="EmailBox" />
+          <label for="PasswordBox">Password</label>
+          <input type="password" class="form-control" id="PasswordBox" />
         </div>
-        <a type="button" class="btn btn-light flex-end" href="/#Recover"
-          >Recover My Account</a
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="KeepSignedIn" />
+          <label class="form-check-label" for="KeepSignedIn">Remember me</label>
+        </div>
+        <a type="button" class="btn btn-light flex-end" href="/Dashboard/"
+          >Login</a
         >
       </form>
       <div class="alternate">
-        <p>
-          If you have any further problems, please contact our <br />
-          <span><a href="#Contact">Costumer Service Team</a></span>
-        </p>
-        <p>Dont have a SpeedMail Account ?</p>
+        <div class="forgot">
+          <a type="submit" class="btn btn-link" href="/User/Forgot/#Username"
+            >Forgot Username?</a
+          >
+          <a type="submit" class="btn btn-link" href="/User/Forgot/#Password"
+            >Forgot Password?</a
+          >
+        </div>
         <a
           type="button"
           class="btn btn-link"

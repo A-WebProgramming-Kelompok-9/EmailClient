@@ -15,20 +15,20 @@
 > 5. [535180039 - Mitchell Ryu Sopany](https://github.com/orgs/A-WebProgramming-Kelompok-9/people/Kudryavkax)
 > 6. [535180043 - Edward](https://github.com/orgs/A-WebProgramming-Kelompok-9/people/ED535180043)
 
-# [TUGAS UTS - Front end](https://a-webprogramming-kelompok-9.github.io/EmailClient/)
+# [TUGAS UTS - Front end](https://speedmail.netlify.app/)
 
-[Link](https://a-webprogramming-kelompok-9.github.io/EmailClient/)
+[Link](https://speedmail.netlify.app/)
 
 ### Page List
 
-> - [Landing Page](https://a-webprogramming-kelompok-9.github.io/EmailClient/)
-> - [About Us](https://a-webprogramming-kelompok-9.github.io/EmailClient/AboutUs/)
-> - [Login Page](https://a-webprogramming-kelompok-9.github.io/EmailClient/Login/)
-> - [Registration](https://a-webprogramming-kelompok-9.github.io/EmailClient/Register/)
-> - [Forgot Password](https://a-webprogramming-kelompok-9.github.io/EmailClient/ForgotUs/)
-> - [Dashboard](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/)
->   - [Mail View](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/View/)
->   - [Create Mail](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/Create/)
->   - [Settings](https://a-webprogramming-kelompok-9.github.io/EmailClient/Dashboard/Settings/)
+> - [Landing Page](https://speedmail.netlify.app/)
+> - [About Us](https://speedmail.netlify.app/AboutUs/)
+> - [Login Page](https://speedmail.netlify.app/Login/)
+> - [Registration](https://speedmail.netlify.app/Register/)
+> - [Forgot Password](https://speedmail.netlify.app/ForgotUs/)
+> - [Dashboard](https://speedmail.netlify.app/Dashboard/)
+>   - [Mail View](https://speedmail.netlify.app/Dashboard/View/)
+>   - [Create Mail](https://speedmail.netlify.app/Dashboard/Create/)
+>   - [Settings](https://speedmail.netlify.app/Dashboard/Settings/)
 
 # TUGAS UAS - Back end
