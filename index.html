@@ -208,7 +208,6 @@
         </div>
       </div>
     </div>
-
     <div>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script
@@ -236,8 +235,11 @@
           let disp = about.css("display");
           if (disp == "none") {
             about.css("display", "flex");
+            about.animate({ opacity: 1 }, 500);
           } else {
-            about.css("display", "none");
+            about.animate({ opacity: 0 }, 500, (e) => {
+              about.css("display", "none");
+            });
           }
         };
       </script>
