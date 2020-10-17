@@ -16,20 +16,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="icon" type="image/png" href="/Assets/SPW LOGO.png">
+    <link rel="icon" type="image/png" href="/Assets/SPW LOGO.png" />
     <title>SPEEDWAGON MAIL</title>
   </head>
   <body id="index">
     <div id="navbar"></div>
     <div id="bodycontainer">
       <div id="welcome" class="mx-auto">
-        <h1>What Is Smail?</h1>
-        <a href="#" class="btn btn-dark my-3">
+        <h1>What Is S'Mail?</h1>
+        <button class="btn btn-dark my-3" onclick="showabout()">
           <i data-feather="alert-circle" class="mr-1"></i>
           About Us
-        </a>
+        </button>
         <p class="mb-5">
-          s’Mail is some sort email client application that enable configuring
+          S’Mail is some sort email client application that enable configuring
           one or more email addresses to receive, read, compose and send emails
           from one user to another.
         </p>
@@ -44,7 +44,7 @@
             <img src="Assets/Rainbow_Yeah.jpg" />
             <div class="mx-5 my-auto">
               <h4>No need to own a computer</h4>
-              s'Mail can be access via browser from your smartphone, </br>
+              s'Mail can be access via browser from your smartphone, <br />
               you just need to have an account then login by using it.
             </div>
           </div>
@@ -52,7 +52,7 @@
             <img src="Assets/Speedwagon_2.jpg" />
             <div class="mx-5 my-auto">
               <h4>Easy Access</h4>
-              Access your email directly as long as you have internet</br>
+              Access your email directly as long as you have internet<br />
               access, just login and youre good to go
             </div>
           </div>
@@ -60,12 +60,14 @@
             <img src="Assets/Speedwagon.jpg" />
             <div class="mx-5 my-auto">
               <h4>Backup and Security</h4>
-              All your information and mails are kept safe and protected</br>
-                      from any malicious attempt while being ready 24/7
+              All your information and mails are kept safe and protected<br />
+              from any malicious attempt while being ready 24/7
             </div>
           </div>
           <div class="item-content reverse">
-            <img src="https://i.kym-cdn.com/entries/icons/facebook/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg" />
+            <img
+              src="https://i.kym-cdn.com/entries/icons/facebook/000/029/959/Screen_Shot_2019-06-05_at_1.26.32_PM.jpg"
+            />
             <div class="mx-5 my-auto">
               <h4>Stonks</h4>
               Stonks
@@ -168,11 +170,41 @@
         </div>
         <div id="signup" class="py-5">
           <h2>Join us now, to experience a speedy mail and more</h2>
-          <a class="btn btn-outline-light regis-btn my-3" href="/User/Register/">
+          <a
+            class="btn btn-outline-light regis-btn my-3"
+            href="/User/Register/"
+          >
             <h4>Register Now</h4>
           </a>
           <img src="Assets/Speedwagon.jpg" alt="" />
           <p>SpeedWagon inc Founder —Robert E. O. Speedwagon</p>
+        </div>
+      </div>
+    </div>
+    <div id="AboutBackdrop">
+      <div class="inner" id="Aboutinn">
+        <h1>Speedwagon Fo'un</h1>
+        <div class="Text">
+          <p>
+            At the beginning of the century, a lone Englishman by the name of
+            Robert E. O. Speedwagon, arrived in the USA and started his own oil
+            business.
+          </p>
+          <p>
+            Because of this he became one of the world's richest men. Speedwagon
+            decided that after his demise, the large sum of his fortune would be
+            used for medical research and wild animal and plant protection.
+          </p>
+          <p>
+            In this organization exists a department called the Supernatural
+            Research Department, which is responsible for supplying the Joestar
+            Family with everything they need. This was the will of Speedwagon,
+            who died in 1952.
+          </p>
+        </div>
+        <div class="Foot">
+          <p>Founder :</p>
+          <p>Robert E. O. Speedwagon</p>
         </div>
       </div>
     </div>
@@ -193,6 +225,21 @@
       <script>
         feather.replace();
         $("#navbar").load("Components/nav.html");
+        var about = $("#AboutBackdrop");
+        about.on("click", (e) => {
+          if (e.target != document.getElementById("AboutBackdrop")) {
+            return;
+          }
+          showabout();
+        });
+        var showabout = (e) => {
+          let disp = about.css("display");
+          if (disp == "none") {
+            about.css("display", "flex");
+          } else {
+            about.css("display", "none");
+          }
+        };
       </script>
     </div>
   </body>

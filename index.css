@@ -193,7 +193,62 @@ html {
   height: 450px;
 }
 
-/*!
- -------------------------------------------
- */
+#AboutBackdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#AboutBackdrop .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 800px;
+  height: 600px;
+  padding: 40px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(219, 239, 240, 0.8))), url(/Assets/Speed.png) no-repeat #938d8d;
+  background: linear-gradient(to bottom, rgba(219, 239, 240, 0.8)), url(/Assets/Speed.png) no-repeat #938d8d;
+  background-size: 100% 100%;
+}
+
+#AboutBackdrop .inner h1 {
+  text-decoration: underline;
+}
+
+#AboutBackdrop .inner .Text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #7a6868;
+}
+
+#AboutBackdrop .inner .Foot {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #000000;
+}
 /*# sourceMappingURL=index.css.map */
