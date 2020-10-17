@@ -1,7 +1,6 @@
 <div class="bg-light flex-col" id="sidebar-wrapper">
   <a class="navbar-brand my-2" href="/Dashboard/">
-    <div id="sidebar-image-brand">
-    </div>
+    <div id="sidebar-image-brand"></div>
     Speedwagon Mail</a
   >
 
@@ -34,17 +33,18 @@
   </div>
 
   <div class="profile flex mt-auto mb-2">
-    <div class="flex-col">
-      <p>Email@speedwagon.com</p>
+    <div class="flex-col text">
+      <p>Jonathan Joestar</p>
+
       <div class="flex">
-        <a href="/">Logout</a>
         <a href="/Dashboard/Settings">Profile</a>
+        <a href="/">Logout</a>
       </div>
     </div>
     <img
-      src="Dio_Yeah.jpg"
+      src="/Assets/Dio_Yeah.jpg"
       alt="logo"
-      class="rounded-circle mx-auto my-auto"
+      class="rounded-circle my-auto"
       style="width: 50px; height: 50px"
     />
   </div>
@@ -53,7 +53,7 @@
 <script>
   $(document).ready(function (e) {
     $("#sidebar-image-brand").replaceWith(
-      `<img src="/Assets/SPW_LOGO.png" alt="" class="rounded-circle mr-1"/>`
+      `<img src="/Assets/SPW LOGO.png" alt="" class="rounded-circle mr-1"/>`
     );
   });
 </script>
