@@ -51,7 +51,38 @@
 
 #sidebar-wrapper .profile {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.175);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+#sidebar-wrapper .profile .text {
+  text-align: center;
+  width: calc(100% - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#sidebar-wrapper .profile .text * {
+  margin: 0;
+}
+
+#sidebar-wrapper .profile .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=side.css.map */
