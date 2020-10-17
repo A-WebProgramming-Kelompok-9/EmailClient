@@ -22,10 +22,11 @@
 ### Page List
 
 > - [Landing Page](https://speedmail.netlify.app/)
-> - [About Us](https://speedmail.netlify.app/AboutUs/)
-> - [Login Page](https://speedmail.netlify.app/Login/)
-> - [Registration](https://speedmail.netlify.app/Register/)
-> - [Forgot Password](https://speedmail.netlify.app/ForgotUs/)
+>    - [About Us](https://speedmail.netlify.app/)
+>  - User Page
+>    - [Login Page](https://speedmail.netlify.app/User/Login/)
+>    - [Registration](https://speedmail.netlify.app/User/Register/)
+>    - [Forgot Account](https://speedmail.netlify.app/User/Forgot/)
 > - [Dashboard](https://speedmail.netlify.app/Dashboard/)
 >   - [Mail View](https://speedmail.netlify.app/Dashboard/View/)
 >   - [Create Mail](https://speedmail.netlify.app/Dashboard/Create/)
