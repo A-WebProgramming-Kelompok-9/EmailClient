@@ -1,3 +1,5 @@
+@import "../../color";
+
 .flex-end {
   align-self: center;
 }
@@ -6,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $brown-200 !important;
 }
 
 #main {
@@ -13,7 +16,11 @@ body {
   flex-direction: column;
   width: 420px;
   height: 580px;
-  background-color: white;
+  background-color: $brown-400;
+  color: white;
+  .btn-link {
+    color: $gray-100;
+  }
   margin: auto;
   padding: 10px;
   border: solid 1px rgba($color: gray, $alpha: 0.7);

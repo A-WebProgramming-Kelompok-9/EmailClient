@@ -1,3 +1,4 @@
+/* SCSS Gradient */
 .maincontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +14,21 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: calc(100% - 250px);
-  background-color: whitesmoke;
+  color: white;
+  background-color: #5e4e42;
+}
+
+.inbox .btn-link {
+  color: #fef3c3;
+}
+
+.inbox .btn-link:hover {
+  color: whitesmoke;
+}
+
+.inbox .btn-outline-light:hover {
+  background-color: transparent !important;
+  color: #fef3c3;
 }
 
 .inbox .search-area {

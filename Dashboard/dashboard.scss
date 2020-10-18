@@ -1,3 +1,5 @@
+@import "../color";
+
 .maincontainer {
   display: flex;
 }
@@ -6,7 +8,18 @@
   display: flex;
   flex-direction: column;
   width: calc(100% - 250px);
-  background-color: whitesmoke;
+  color: white;
+  background-color: $brown-400;
+  .btn-link {
+    color: $brown-100;
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+  .btn-outline-light:hover {
+    background-color: transparent !important;
+    color: $brown-100;
+  }
   .search-area {
     display: flex;
     justify-content: space-between;

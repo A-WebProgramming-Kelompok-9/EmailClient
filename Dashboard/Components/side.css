@@ -1,3 +1,4 @@
+/* SCSS Gradient */
 .flex-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +21,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #a77d52 !important;
+  color: white;
 }
 
 #sidebar-wrapper .navbar-brand {
@@ -30,11 +33,31 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #e6e6fa;
+}
+
+#sidebar-wrapper .navbar-brand:hover {
+  color: white;
 }
 
 #sidebar-wrapper .navbar-brand img {
   height: 60px;
   width: 60px;
+}
+
+#sidebar-wrapper .btn-link {
+  color: #a6a6a4;
+  background-color: rgba(67, 51, 28, 0.5);
+}
+
+#sidebar-wrapper .btn-link:hover {
+  background-color: rgba(254, 243, 195, 0.5);
+  color: #43331c;
+}
+
+#sidebar-wrapper .btn-link.acti {
+  background-color: rgba(254, 243, 195, 0.5);
+  color: #43331c;
 }
 
 #sidebar-wrapper .list-group {
@@ -62,8 +85,16 @@
   padding: 10px;
 }
 
+#sidebar-wrapper .profile .btn-link {
+  background-color: transparent;
+  color: #fef3c3;
+}
+
+#sidebar-wrapper .profile .btn-link:hover {
+  color: #43331c;
+}
+
 #sidebar-wrapper .profile .text {
-  text-align: center;
   width: calc(100% - 90px);
   display: -webkit-box;
   display: -ms-flexbox;
