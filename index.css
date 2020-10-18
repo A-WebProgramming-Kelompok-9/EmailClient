@@ -1,4 +1,8 @@
 /* SCSS Gradient */
+html {
+  background-color: #a77d52;
+}
+
 .bg-gray-100 {
   background-color: #e6e6fa;
 }

@@ -8,26 +8,36 @@
     <a
       href="/Dashboard/#Inbox"
       class="list-group-item list-group-item-action btn-link acti"
+      id="InboxSel"
+      onclick="Sel(0)"
       >Inbox</a
     >
     <a
       href="/Dashboard/#Unread"
       class="list-group-item list-group-item-action btn-link"
+      id="UnreadSel"
+      onclick="Sel(1)"
       >Unread</a
     >
     <a
       href="/Dashboard/#Sent"
       class="list-group-item list-group-item-action btn-link"
+      id="SentSel"
+      onclick="Sel(2)"
       >Sent</a
     >
     <a
       href="/Dashboard/#Favourite"
       class="list-group-item list-group-item-action btn-link"
+      id="FavSel"
+      onclick="Sel(3)"
       >Favourite</a
     >
     <a
       href="/Dashboard/#Spam"
       class="list-group-item list-group-item-action btn-link"
+      id="SpamSel"
+      onclick="Sel(4)"
       >Spam</a
     >
   </div>
@@ -51,9 +61,40 @@
 </div>
 
 <script>
+  var arr = [
+    $("#InboxSel"),
+    $("#UnreadSel"),
+    $("#SentSel"),
+    $("#FavSel"),
+    $("#SpamSel"),
+  ];
+  var curracti = 0;
   $(document).ready(function (e) {
     $("#sidebar-image-brand").replaceWith(
       `<img src="/Assets/SPW LOGO.png" alt="" class="rounded-circle mr-1"/>`
     );
+    let link = window.location.href.split("#")[1];
+    switch (link) {
+      case "Inbox":
+        Sel(0);
+        break;
+      case "Unread":
+        Sel(1);
+        break;
+      case "Sent":
+        Sel(2);
+        break;
+      case "Favourite":
+        Sel(3);
+        break;
+      case "Spam":
+        Sel(4);
+        break;
+    }
   });
+  var Sel = (opt) => {
+    arr[curracti].removeClass("acti");
+    arr[opt].addClass("acti");
+    curracti = opt;
+  };
 </script>

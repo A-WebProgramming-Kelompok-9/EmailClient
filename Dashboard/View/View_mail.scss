@@ -1,12 +1,37 @@
+@import "../../color";
+html {
+  background-color: $brown-200;
+}
+
 .maincontainer {
   display: flex;
 
   .main {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
     padding: 5px;
     width: calc(100% - 250px);
+    background-color: $brown-400;
+    color: white;
+    .btn-outline-light {
+      border: none;
+    }
+    .btn-link {
+      color: $brown-100;
+    }
+    .btn-red {
+      background-color: transparent;
+      color: #ff7b7b;
+      font-weight: bold;
+      &:hover {
+        background-color: rgba($color: #ff5252, $alpha: 0.9);
+        color: $gray-100;
+      }
+    }
+    textarea {
+      background-color: rgba($color: white, $alpha: 0.1);
+      color: white;
+    }
 
     h2 {
       align-items: center;

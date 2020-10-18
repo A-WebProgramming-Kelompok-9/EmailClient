@@ -27,15 +27,14 @@
     }
   }
   .btn-link {
-    color: $gray-300;
-    background-color: rgba($brown-300, 0.5);
+    color: $gray-100;
+    background-color: rgba($brown-400, 0.8);
     &:hover {
-      background-color: rgba($brown-100, 0.5);
-      color: $brown-300;
+      background-color: rgba($brown-400, 0.5);
     }
     &.acti {
-      background-color: rgba($brown-100, 0.5);
-      color: $brown-300;
+      background-color: rgba($brown-400, 0.5);
+      color: $brown-100;
     }
   }
   .list-group {
@@ -51,7 +50,7 @@
   .profile {
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.175);
+    background-color: rgba($color: $brown-400, $alpha: 0.8);
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -59,9 +58,6 @@
     .btn-link {
       background-color: transparent;
       color: $brown-100;
-      &:hover {
-        color: $brown-300;
-      }
     }
     .text {
       width: calc(100% - 90px);

@@ -1,4 +1,8 @@
 /* SCSS Gradient */
+html {
+  background-color: #a77d52;
+}
+
 .maincontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,7 +19,7 @@
           flex-direction: column;
   width: calc(100% - 250px);
   color: white;
-  background-color: #5e4e42;
+  background-color: #a77d52;
 }
 
 .inbox .btn-link {
@@ -26,11 +30,6 @@
   color: whitesmoke;
 }
 
-.inbox .btn-outline-light:hover {
-  background-color: transparent !important;
-  color: #fef3c3;
-}
-
 .inbox .search-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +37,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.inbox .search-area input {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .inbox .search-area .search {
@@ -53,6 +56,10 @@
           justify-content: space-between;
 }
 
+.inbox .search-area btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .inbox .mail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +70,7 @@
           flex-direction: column;
   overflow-y: scroll;
   height: calc(100vh - 100px);
+  background-color: #5e4e42;
 }
 
 .inbox .mail .mail-items {

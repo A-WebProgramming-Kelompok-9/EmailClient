@@ -1,3 +1,8 @@
+/* SCSS Gradient */
+html {
+  background-color: #a77d52;
+}
+
 .maincontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +18,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: calc(100% - 250px);
-  background-color: whitesmoke;
+  background-color: #a77d52;
+}
+
+#maincontent .btn-link {
+  color: #fef3c3;
 }
 
 #maincontent .search-area {
@@ -23,6 +32,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#maincontent .search-area input {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #maincontent .search-area .search {
@@ -38,6 +51,10 @@
           justify-content: space-between;
 }
 
+#maincontent .search-area btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 #maincontent #settings {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,8 +68,32 @@
           align-items: flex-start;
   height: 700px;
   border: solid 1px gray;
+  border-radius: 15px;
   width: 800px;
   margin: 0 auto;
+  color: white;
+  background-color: #5e4e42;
+}
+
+#maincontent #settings .form-control {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+#maincontent #settings .form-control::-webkit-input-placeholder {
+  color: #625261;
+}
+
+#maincontent #settings .form-control:-ms-input-placeholder {
+  color: #625261;
+}
+
+#maincontent #settings .form-control::-ms-input-placeholder {
+  color: #625261;
+}
+
+#maincontent #settings .form-control::placeholder {
+  color: #625261;
 }
 
 #maincontent #settings #Myaccount-area {

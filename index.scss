@@ -1,5 +1,7 @@
 @import "./color";
-
+html {
+  background-color: $brown-200;
+}
 .bg-gray-100 {
   background-color: $gray-100;
 }
