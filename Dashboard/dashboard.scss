@@ -1,3 +1,8 @@
+@import "../color";
+html {
+  background-color: $brown-200;
+}
+
 .maincontainer {
   display: flex;
 }
@@ -6,10 +11,21 @@
   display: flex;
   flex-direction: column;
   width: calc(100% - 250px);
-  background-color: whitesmoke;
+  color: white;
+  background-color: $brown-200;
+  .btn-link {
+    color: $brown-100;
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+
   .search-area {
     display: flex;
     justify-content: space-between;
+    input {
+      background-color: rgba($color: white, $alpha: 0.7);
+    }
     .search {
       width: calc(100vw - 450px);
     }
@@ -17,12 +33,16 @@
       display: flex;
       justify-content: space-between;
     }
+    btn-outline-light:hover {
+      background-color: rgba($color: white, $alpha: 0.7);
+    }
   }
   .mail {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     height: calc(100vh - 100px);
+    background-color: $brown-400;
     .mail-items {
       width: 100%;
       display: flex;

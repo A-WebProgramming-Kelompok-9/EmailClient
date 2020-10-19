@@ -1,4 +1,4 @@
-<div class="bg-light flex-col" id="sidebar-wrapper">
+<div class="flex-col" id="sidebar-wrapper">
   <a class="navbar-brand my-2" href="/Dashboard/">
     <div id="sidebar-image-brand"></div>
     Speedwagon Mail</a
@@ -7,27 +7,37 @@
   <div class="list-group list-group-flush mt-2">
     <a
       href="/Dashboard/#Inbox"
-      class="list-group-item list-group-item-action bg-light"
+      class="list-group-item list-group-item-action btn-link acti"
+      id="InboxSel"
+      onclick="Sel(0)"
       >Inbox</a
     >
     <a
       href="/Dashboard/#Unread"
-      class="list-group-item list-group-item-action bg-light"
+      class="list-group-item list-group-item-action btn-link"
+      id="UnreadSel"
+      onclick="Sel(1)"
       >Unread</a
     >
     <a
       href="/Dashboard/#Sent"
-      class="list-group-item list-group-item-action bg-light"
+      class="list-group-item list-group-item-action btn-link"
+      id="SentSel"
+      onclick="Sel(2)"
       >Sent</a
     >
     <a
       href="/Dashboard/#Favourite"
-      class="list-group-item list-group-item-action bg-light"
+      class="list-group-item list-group-item-action btn-link"
+      id="FavSel"
+      onclick="Sel(3)"
       >Favourite</a
     >
     <a
       href="/Dashboard/#Spam"
-      class="list-group-item list-group-item-action bg-light"
+      class="list-group-item list-group-item-action btn-link"
+      id="SpamSel"
+      onclick="Sel(4)"
       >Spam</a
     >
   </div>
@@ -37,8 +47,8 @@
       <p>Jonathan Joestar</p>
 
       <div class="flex">
-        <a href="/Dashboard/Settings">Profile</a>
-        <a href="/">Logout</a>
+        <a href="/Dashboard/Settings" class="btn-link">Profile</a>
+        <a href="/" class="btn-link">Logout</a>
       </div>
     </div>
     <img
@@ -51,9 +61,40 @@
 </div>
 
 <script>
+  var arr = [
+    $("#InboxSel"),
+    $("#UnreadSel"),
+    $("#SentSel"),
+    $("#FavSel"),
+    $("#SpamSel"),
+  ];
+  var curracti = 0;
   $(document).ready(function (e) {
     $("#sidebar-image-brand").replaceWith(
       `<img src="/Assets/SPW LOGO.png" alt="" class="rounded-circle mr-1"/>`
     );
+    let link = window.location.href.split("#")[1];
+    switch (link) {
+      case "Inbox":
+        Sel(0);
+        break;
+      case "Unread":
+        Sel(1);
+        break;
+      case "Sent":
+        Sel(2);
+        break;
+      case "Favourite":
+        Sel(3);
+        break;
+      case "Spam":
+        Sel(4);
+        break;
+    }
   });
+  var Sel = (opt) => {
+    arr[curracti].removeClass("acti");
+    arr[opt].addClass("acti");
+    curracti = opt;
+  };
 </script>

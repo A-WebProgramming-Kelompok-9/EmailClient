@@ -1,3 +1,7 @@
+@import "../../color";
+html {
+  background-color: $brown-200;
+}
 .maincontainer {
   display: flex;
 }
@@ -6,16 +10,27 @@
   display: flex;
   flex-direction: column;
   width: calc(100% - 250px);
-  background-color: whitesmoke;
+  background-color: $brown-200;
+
+  .btn-link {
+    color: $brown-100;
+  }
+
   .search-area {
     display: flex;
     justify-content: space-between;
+    input {
+      background-color: rgba($color: white, $alpha: 0.7);
+    }
     .search {
       width: calc(100vw - 450px);
     }
     .btn {
       display: flex;
       justify-content: space-between;
+    }
+    btn-outline-light:hover {
+      background-color: rgba($color: white, $alpha: 0.7);
     }
   }
   #settings {
@@ -24,8 +39,18 @@
     align-items: flex-start;
     height: 700px;
     border: solid 1px gray;
+    border-radius: 15px;
     width: 800px;
     margin: 0 auto;
+    color: white;
+    background-color: $brown-400;
+    .form-control {
+      background-color: rgba($color: white, $alpha: 0.6);
+      color: black;
+      &::placeholder {
+        color: $gray-200;
+      }
+    }
     #Myaccount-area {
       display: flex;
       #profile-pic {

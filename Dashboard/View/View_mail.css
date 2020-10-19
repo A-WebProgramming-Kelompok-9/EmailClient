@@ -1,3 +1,8 @@
+/* SCSS Gradient */
+html {
+  background-color: #a77d52;
+}
+
 .maincontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,9 +17,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: whitesmoke;
   padding: 5px;
   width: calc(100% - 250px);
+  background-color: #5e4e42;
+  color: white;
+}
+
+.maincontainer .main .btn-outline-light {
+  border: none;
+}
+
+.maincontainer .main .btn-link {
+  color: #fef3c3;
+}
+
+.maincontainer .main .btn-red {
+  background-color: transparent;
+  color: #ff7b7b;
+  font-weight: bold;
+}
+
+.maincontainer .main .btn-red:hover {
+  background-color: rgba(255, 82, 82, 0.9);
+  color: #e6e6fa;
+}
+
+.maincontainer .main textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 
 .maincontainer .main h2 {

@@ -25,7 +25,7 @@
     <title>Sign Up - Speedmail</title>
   </head>
   <body>
-    <div class="main">
+    <div id="main">
       <h4>Start Using Smail</h4>
       <p style="font-size: 15px">
         Join Smail, to write your own mail, send your mail and many more
@@ -48,20 +48,40 @@
       <div class="spacer"></div>
       <form class="register-form">
         <div class="form-group">
-          <label for="Emailbox">Email</label>
-          <input type="text" class="form-control" id="Emailbox" />
+          <label for="Emailbox">Alternate Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Emailbox"
+            placeholder="Ex : Johndoe@..."
+          />
         </div>
         <div class="form-group">
           <label for="UsernameBox">Username</label>
-          <input type="text" class="form-control" id="UsernameBox" />
+          <input
+            type="text"
+            class="form-control"
+            id="UsernameBox"
+            placeholder="Username"
+          />
         </div>
         <div class="form-group">
           <label for="PasswordBox">Password</label>
-          <input type="password" class="form-control" id="PasswordBox" />
+          <input
+            type="password"
+            class="form-control"
+            id="PasswordBox"
+            placeholder="Password"
+          />
         </div>
         <div class="form-group">
           <label for="PasswordConfirmBox">Confirm Password</label>
-          <input type="password" class="form-control" id="PasswordConfirmBox" />
+          <input
+            type="password"
+            class="form-control"
+            id="PasswordConfirmBox"
+            placeholder="Confirm Password"
+          />
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="ConfirmPolicy" />
@@ -70,11 +90,25 @@
             policy</small
           >
         </div>
-        <a type="button" class="btn btn-light" href="/Dashboard/">
+        <a type="button" class="btn btn-outline-light" href="/Dashboard/">
           <span class="fa fa-plus"></span>
           Create Account</a
         >
       </form>
+      <div class="alternate">
+        <p class="norm">
+          Already have a SpeedMail Account ? <br />
+          <span
+            ><a
+              type="button"
+              class="btn btn-link"
+              href="/User/Login/"
+              style="width: 100px; margin: auto"
+              >Sign In</a
+            ></span
+          >
+        </p>
+      </div>
     </div>
     <div>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
